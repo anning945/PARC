@@ -1,0 +1,7 @@
+{
+  "bamboo_root": "data/benchmarks/BAMBOO",
+  "ethic_root": "data/benchmarks/ETHIC",
+  "helmet_data_root": "data/benchmarks/HELMET/data/kilt",
+  "longtable_root": "data/benchmarks/LongTableBench",
+  "schema_output_dir": "outputs/parc_schema_check"
+}

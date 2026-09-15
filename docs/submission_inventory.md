@@ -10,11 +10,16 @@
 | `requirements.txt` | Runtime dependencies with artifact-compatible pins |
 | `requirements-lock.txt` | Exact pip lock used for release verification |
 | `environment.yml` | Reproducible Python 3.10 conda environment |
+| `requirements-benchmark.txt` | Adapter and prompt-reconstruction dependencies |
 | `artifacts/parc_selector/` | Frozen routing model, manifest, and checksums |
 | `src/parc_router/*.py` | Frozen v9 routing runtime and feature construction dependencies |
+| `src/parc_benchmarks/` | Prediction-free four-family adapters and prompt renderers |
 | `configs/parc_policy.json` | Route portfolio, policy constants, feature dimensions |
+| `configs/benchmark_paths.example.json` | Local benchmark directory template |
 | `scripts/run_parc_self_test.sh` | Deterministic runtime self-test |
+| `scripts/run_parc_schema_check.sh` | Full-scope prediction-free benchmark schema check |
 | `scripts/make_synthetic_fixture.py` | Synthetic retrieval-only schema fixture generator |
+| `tests/` | Adapter and routing contract tests |
 | `docs/*.md` | Input schema, benchmark provenance, release boundary, and submission inventory |
 | `results/parc_quality_compression_pareto_verified.csv` | Score-only operating-point summary |
 | `results/parc_task_quality_verified.csv` | Score-only task summary |
@@ -35,9 +40,11 @@
 
 ## Required before public release / 正式公开前必须补齐
 
-1. Public benchmark download and preprocessing instructions.
-2. Clean benchmark adapters and downstream generation/scoring code.
-3. A clean-environment end-to-end routing run using the released model bundle.
+1. Upstream datasets must be downloaded by each user under their own licenses.
+2. A retrieval materializer and downstream generation/scoring code must be
+   supplied for a full generator-level replay.
+3. A clean-environment end-to-end routing and generation run using the
+   released model bundle.
 4. A final credential/private-path scan and a fixed commit hash linked to the
    paper version.
 

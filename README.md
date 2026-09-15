@@ -8,11 +8,13 @@ This is the proposed public code package for PARC. PARC selects a compressed ret
 
 - `src/parc_router/parc_runtime.py`: the public v9 retrieval-only routing entry point;
 - `src/parc_router/`: PARC feature extraction, selector, compatibility, and runtime modules;
+- `src/parc_benchmarks/`: prediction-free adapters for the four benchmark families;
 - `artifacts/parc_selector/`: the frozen selector model, manifest, and SHA256 checksums;
 - `configs/parc_policy.json`: the nine-route portfolio and frozen policy constants;
-- `scripts/`: deterministic self-tests and synthetic schema fixtures;
+- `scripts/`: schema checks, deterministic self-tests, and synthetic fixtures;
+- `tests/`: public adapter and routing contract tests;
 - `results/`: score-only task and operating-point summaries;
-- `docs/`: input schema, benchmark provenance, and release boundaries.
+- `docs/`: input schema, benchmark provenance, workflow, and release boundaries.
 
 ### Excluded
 
@@ -30,9 +32,10 @@ NumPy 2.2.6, joblib 1.5.3, and scikit-learn 1.7.2; install the exact versions
 from `requirements-lock.txt` or `environment.yml` before loading it.
 
 The package records the four benchmark upstream sources in
-`docs/benchmarks.md` but still does not provide their download/preprocessing
-adapters, retriever/reranker checkpoints, or generator evaluation pipeline, so
-it is not a one-command reproduction of every paper number.
+`docs/benchmarks.md` and provides prediction-free adapters plus a full-scope
+schema check. It does not bundle retriever/reranker checkpoints or a generator
+evaluation pipeline, so it is not a one-command reproduction of every paper
+number.
 
 ### Quick start
 
@@ -55,6 +58,24 @@ Generate a synthetic schema fixture:
 ```bash
 python scripts/make_synthetic_fixture.py
 ```
+
+Run the public adapter contract tests:
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+```
+
+After downloading the four upstream datasets into the layout in
+`docs/reproduction_workflow.md`, run the prediction-free full-scope schema
+check:
+
+```bash
+python -m pip install -r requirements-benchmark.txt
+PYTHON=/path/to/python bash scripts/run_parc_schema_check.sh
+```
+
+Set `PARC_SELECTOR_STUB_OUTPUT` when the external retriever should consume a
+selector-only JSONL export; see `docs/reproduction_workflow.md`.
 
 The full routing CLI requires a frozen selector model and manifest:
 
@@ -110,7 +131,7 @@ This software is released under the MIT License. See `LICENSE`.
 
 不包含：生成模型、embedding 和 reranker 权重、私有缓存、benchmark 原始数据、prompt、答案、标签、chunk 原文、正式预测、中间分数、服务器路径、SSH 凭据、日志、历史探索脚本以及论文文件；冻结 selector 是明确包含的例外。
 
-当前目录已经包含冻结 selector 模型和 manifest，可以复现检索路由；依赖应严格使用 Python 3.10.20、NumPy 2.2.6、joblib 1.5.3 和 scikit-learn 1.7.2。但还没有四个 benchmark 的公开下载/预处理适配器、检索器/重排器权重和生成评测流水线，因此仍不能宣称一键精确复现论文全部数字。正式公开前还需要完成独立干净环境的全流程复跑。
+当前目录已经包含冻结 selector、四族 benchmark 的无预测 adapter 和全量 schema 检查流程，可以复现检索路由；依赖应严格使用 Python 3.10.20、NumPy 2.2.6、joblib 1.5.3 和 scikit-learn 1.7.2。检索器/重排器权重和生成评测流水线仍需由使用者按 benchmark 规范提供，因此仍不能宣称一键精确复现论文全部数字。
 
 运行自检：
 
