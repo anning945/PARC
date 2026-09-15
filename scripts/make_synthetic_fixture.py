@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src" / "parc_router"))
 
-from successor_selector_v9_dualview_runtime_20260720 import (  # noqa: E402
+from parc_runtime import (  # noqa: E402
     ANCHOR_CANDIDATES, DENSE_METHOD, QUALITY_CANDIDATES, SAFE_METHOD
 )
 

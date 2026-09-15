@@ -9,12 +9,12 @@
 | `requirements.txt` | Runtime dependencies with artifact-compatible pins |
 | `requirements-lock.txt` | Exact pip lock used for release verification |
 | `environment.yml` | Reproducible Python 3.10 conda environment |
-| `artifacts/frozen_selector/` | Frozen routing model, manifest, and checksums |
+| `artifacts/parc_selector/` | Frozen routing model, manifest, and checksums |
 | `src/parc_router/*.py` | Frozen v9 routing runtime and feature construction dependencies |
-| `configs/selector_config.json` | Route portfolio, policy constants, feature dimensions |
+| `configs/parc_policy.json` | Route portfolio, policy constants, feature dimensions |
 | `scripts/run_self_test.sh` | Deterministic runtime self-test |
 | `scripts/make_synthetic_fixture.py` | Synthetic retrieval-only schema fixture generator |
-| `docs/*.md` | Input schema, release boundary, and submission inventory |
+| `docs/*.md` | Input schema, benchmark provenance, release boundary, and submission inventory |
 | `results/quality_compression_pareto_verified.csv` | Score-only operating-point summary |
 | `results/task_quality_verified_20260731.csv` | Score-only task summary |
 | `results/verified_release_collection_summary.json` | Release audit collection summary |

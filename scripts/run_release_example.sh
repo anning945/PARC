@@ -2,7 +2,7 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 PYTHON="${PYTHON:-python}"
-MODEL="$ROOT/artifacts/frozen_selector/successor_v9_dualview_final_model.joblib"
+MODEL="$ROOT/artifacts/parc_selector/parc_frozen_selector.joblib"
 INPUT="$ROOT/examples/synthetic_task_input.json"
 OUTPUT="${1:-$ROOT/examples/synthetic_routing_output.json}"
 
@@ -25,7 +25,7 @@ for name, version in expected.items():
 print("Dependency versions: OK")
 PY
 
-"$PYTHON" "$ROOT/src/parc_router/successor_selector_v9_dualview_runtime_20260720.py" \
+"$PYTHON" "$ROOT/src/parc_router/parc_runtime.py" \
   --model "$MODEL" \
   --task-input "$INPUT" \
   --output "$OUTPUT"

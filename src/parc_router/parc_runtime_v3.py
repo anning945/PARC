@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Retrieval-only runtime for the shift-robust Successor-v3 selector.
+"""Compatibility runtime for the shift-robust PARC selector.
 
 The learned model is strictly per query and contains no task/profile,
 benchmark, family, task-name, or model-identity features.  Task boundaries are
@@ -17,8 +17,8 @@ from typing import Any, Mapping, Sequence
 
 import numpy as np
 
-import selector_successor_v2_20260718 as selector
-import successor_selector_runtime_20260718 as legacy
+import parc_selector as selector
+import parc_compat_runtime as legacy
 
 
 PROTOCOL = "Successor-v3-shift-robust-selector-runtime-20260719"

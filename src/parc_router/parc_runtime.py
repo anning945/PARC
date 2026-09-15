@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prediction-free deployment runtime for the frozen Successor-v9 selector.
+"""Prediction-free deployment runtime for the frozen PARC selector.
 
 The runtime receives one complete opaque task group containing only questions,
 chunk stores, and the terminally verified eleven-method retrieval inventory.
@@ -27,8 +27,8 @@ from typing import Any, Mapping, Sequence
 import joblib
 import numpy as np
 
-import successor_selector_runtime_20260718 as legacy
-import successor_selector_v3_shift_robust_runtime_20260719 as deployment_v3
+import parc_compat_runtime as legacy
+import parc_runtime_v3 as deployment_v3
 
 
 PROTOCOL = "Successor-v9-dualview-selector-runtime-20260720-v2"
@@ -39,9 +39,9 @@ EXPECTED_MODEL_SHA256 = (
     "612f952f3046ebb13d4c087f41f9666a9d33cd8e15f050f7b262cc558a15e1ab"
 )
 EXPECTED_MANIFEST_SHA256 = (
-    "79735c53b185791045060504dae8b3f00e273ebf53c4bc6d95eae7bf039d4af7"
+    "5eff9281c28e703a0b96ad9abb641b8404093605c9bdb73fbc8b4e36b3029b0f"
 )
-MODEL_MANIFEST_NAME = "successor_v9_dualview_final_model_manifest.json"
+MODEL_MANIFEST_NAME = "parc_frozen_selector_manifest.json"
 
 DENSE_METHOD = "FullPool_Dense_k8"
 SAFE_METHOD = "SmartMemory_CompressedDense_R45_k8"
@@ -752,7 +752,7 @@ def self_test() -> None:
     assert canonical_sha256(EXPECTED_POLICY) == canonical_sha256(
         dict(reversed(list(EXPECTED_POLICY.items())))
     )
-    print("PASS successor_selector_v9_dualview_runtime self-test")
+    print("PASS parc_runtime self-test")
 
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:

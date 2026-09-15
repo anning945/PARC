@@ -1756,7 +1756,7 @@
   },
   "model_artifact": {
     "bytes": 20890138,
-    "path": "successor_v9_dualview_final_model.joblib",
+      "path": "parc_frozen_selector.joblib",
     "serialization": "joblib-compress3-pickle-protocol5",
     "sha256": "612f952f3046ebb13d4c087f41f9666a9d33cd8e15f050f7b262cc558a15e1ab"
   },

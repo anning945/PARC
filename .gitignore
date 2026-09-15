@@ -16,10 +16,10 @@ cache/
 
 # The release includes the frozen selector artifact for deterministic routing.
 !artifacts/
-!artifacts/frozen_selector/
-!artifacts/frozen_selector/*.joblib
-!artifacts/frozen_selector/*.json
-!artifacts/frozen_selector/SHA256SUMS
+!artifacts/parc_selector/
+!artifacts/parc_selector/*.joblib
+!artifacts/parc_selector/*.json
+!artifacts/parc_selector/SHA256SUMS
 !configs/*.json
 !examples/*.json
 !results/*.json

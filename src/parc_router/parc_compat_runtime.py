@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Label-free deployment runtime for the frozen Successor-v2 selector.
+"""Compatibility runtime for the frozen PARC selector.
 
 The public routing API accepts one complete task at a time.  Each query
 contains only an opaque key, the question, the original chunks, and retrieval
@@ -24,8 +24,8 @@ from typing import Any, Mapping, Sequence
 
 import numpy as np
 
-import extract_adaptive_v3_selector_enhanced_features_20260718 as enhanced
-import selector_successor_v2_20260718 as selector
+import parc_feature_extractor as enhanced
+import parc_selector as selector
 
 
 PROTOCOL = "Successor-v2-selector-runtime-20260718"

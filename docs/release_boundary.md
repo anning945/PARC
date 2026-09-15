@@ -3,7 +3,7 @@
 ## Public / 可以公开
 
 - PARC retrieval-only routing source;
-- the frozen selector model and sibling manifest, with SHA256 checksums;
+- the frozen PARC selector model and sibling manifest, with SHA256 checksums;
 - route names, feature dimensions, and policy constants;
 - score-only summaries;
 - schema checks and deterministic self-tests;

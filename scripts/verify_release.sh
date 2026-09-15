@@ -24,7 +24,7 @@ for line in (root / "SHA256SUMS").read_text(encoding="utf-8").splitlines():
         raise SystemExit(f"SHA256 mismatch: {relative}: {digest}")
 print("SHA256SUMS: OK")
 
-artifact_root = root / "artifacts" / "frozen_selector"
+artifact_root = root / "artifacts" / "parc_selector"
 for line in (artifact_root / "SHA256SUMS").read_text(encoding="utf-8").splitlines():
     if not line.strip():
         continue
