@@ -461,43 +461,43 @@
   "formal_generation_started": false,
   "formal_predictions_answers_f1_or_scores_used": false,
   "implementation": {
-    "freeze_source": "private_training_script_not_in_release/freeze_successor_v9_dualview_final_model_20260720.py",
+    "freeze_source": "private_training_script_not_in_release/freeze_parc_v9_dualview_final_model_20260720.py",
     "freeze_source_sha256": "d55714ab745096be2fd9ed3a4eaaaa9e333fe9dc8e2ac4da1a5f4c6bbfb91e8a",
     "r6_source_sha256": "967fe0892244f864948c32ee1e9e5f3b35dd15359a1c97bfabd672e8cfe12377",
     "r9_source_sha256": "30affa3d4e80c0704ae345b0b46094b34a147bf4a6fbaf1cbb3d66ced833cdff",
     "replay_source_sha256": "b8b1293d74d758b41135d6a666a4bae0ee845ab2e2d81efa4cc6edeb14fda5a6"
   },
   "inputs": {
-    "enhanced_features": "results/adaptive_v3_successor_selector_20260718/enhanced_features/adaptive_v3_selector_enhanced_features.csv",
+    "enhanced_features": "results/adaptive_v3_parc_selector_20260718/enhanced_features/adaptive_v3_selector_enhanced_features.csv",
     "enhanced_features_sha256": "d7f2bfb46cdb7812ecd116ac2300760202466ef677fc983f4429f17c2b80b00e",
-    "raw_cache_dir": "analysis/successor_v6_r4_raw_prediction_cache_20260720",
-    "relative_cache_dir": "analysis/successor_v8_relative_prediction_cache_20260720",
+    "raw_cache_dir": "analysis/parc_v6_r4_raw_prediction_cache_20260720",
+    "relative_cache_dir": "analysis/parc_v8_relative_prediction_cache_20260720",
     "safe_features": "results/adaptive_v3_candidate_sweep_20260718/adaptive_v3_candidate_sweep_full_20260718_audit/generation/adaptive_v3_candidate_generation_safe_features.csv",
     "safe_features_sha256": "26ca9e5bb2bbd9d172d7682be5fde05ac6a10cce60b7a11e61d6c88bd0c53a20"
   },
   "method": {
     "anchor_methods": [
-      "SmartMemory_CompressedDense_DocOrder_R45_k8",
-      "SmartMemory_CompressedDense_R45_k8",
-      "SmartMemory_CompressedDense_RRFOrder_R45_k8",
-      "SmartMemory_CompressedDense_RerankOrder_R45_k8",
-      "SmartMemory_Hybrid_BM25_D7A1_R45_k8",
-      "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
-      "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
-      "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
-      "SmartMemory_Hybrid_RRF_D6A2_R45_k8",
-      "SmartMemory_Hybrid_Rerank_D7A1_M10_R45_k8"
+      "PARC_CompressedDense_DocOrder_R45_k8",
+      "PARC_CompressedDense_R45_k8",
+      "PARC_CompressedDense_RRFOrder_R45_k8",
+      "PARC_CompressedDense_RerankOrder_R45_k8",
+      "PARC_Hybrid_BM25_D7A1_R45_k8",
+      "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
+      "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
+      "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
+      "PARC_Hybrid_RRF_D6A2_R45_k8",
+      "PARC_Hybrid_Rerank_D7A1_M10_R45_k8"
     ],
     "candidate_methods": [
-      "SmartMemory_CompressedDense_DocOrder_R45_k8",
-      "SmartMemory_CompressedDense_RRFOrder_R45_k8",
-      "SmartMemory_CompressedDense_RerankOrder_R45_k8",
-      "SmartMemory_Hybrid_BM25_D7A1_R45_k8",
-      "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
-      "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
-      "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
-      "SmartMemory_Hybrid_RRF_D6A2_R45_k8",
-      "SmartMemory_Hybrid_Rerank_D7A1_M10_R45_k8"
+      "PARC_CompressedDense_DocOrder_R45_k8",
+      "PARC_CompressedDense_RRFOrder_R45_k8",
+      "PARC_CompressedDense_RerankOrder_R45_k8",
+      "PARC_Hybrid_BM25_D7A1_R45_k8",
+      "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
+      "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
+      "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
+      "PARC_Hybrid_RRF_D6A2_R45_k8",
+      "PARC_Hybrid_Rerank_D7A1_M10_R45_k8"
     ],
     "combination": "componentwise arithmetic mean before policy scoring",
     "disagreement_penalty": 0.0,
@@ -1755,10 +1755,10 @@
     }
   },
   "model_artifact": {
-    "bytes": 20890138,
+    "bytes": 20951179,
       "path": "parc_frozen_selector.joblib",
     "serialization": "joblib-compress3-pickle-protocol5",
-    "sha256": "612f952f3046ebb13d4c087f41f9666a9d33cd8e15f050f7b262cc558a15e1ab"
+    "sha256": "b7f4563dca7ce2d4a92e9b2fd940b09268455bc053977d3cf236300a2934c42f"
   },
   "new_model_fitting_permitted": true,
   "new_model_fitting_scope": "all 5763 opened-development queries only",
@@ -1776,7 +1776,7 @@
               221
             ],
             "npz_sha256": "2546c4fb15740532f7af471e483f092a147ddf00e6b21359419526a61d430fd3",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_family_outer_0_InfiniteBench_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_family_outer_0_InfiniteBench_target.npz",
             "predict_indices_sha256": "db48c56ff5f857e46a0b2a18da465989c588427f24ca4c737de85a33c983bd2b",
             "predict_queries": 351,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -1799,7 +1799,7 @@
               431
             ],
             "npz_sha256": "8c150a30f6e7dfd3cc588698001eae535e3993e5eb6df4fdf79263963cef237f",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_family_outer_0_InfiniteBench_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_family_outer_0_InfiniteBench_target.npz",
             "predict_indices_sha256": "db48c56ff5f857e46a0b2a18da465989c588427f24ca4c737de85a33c983bd2b",
             "predict_queries": 351,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -1827,7 +1827,7 @@
               221
             ],
             "npz_sha256": "649edd29ac10d41865348ed4d687a6f419e081f72a73da9b750f09579aeb8dd4",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_family_outer_1_L-Eval_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_family_outer_1_L-Eval_target.npz",
             "predict_indices_sha256": "01cd62fa0bed9e1df1f962b1cd387bd0ea357eca6156ac7ed579446fe129a2b0",
             "predict_queries": 422,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -1850,7 +1850,7 @@
               431
             ],
             "npz_sha256": "26baeb971be496fffa19efb388c771faeb2bca184ce11feb4a4cd77b4ac6f777",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_family_outer_1_L-Eval_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_family_outer_1_L-Eval_target.npz",
             "predict_indices_sha256": "01cd62fa0bed9e1df1f962b1cd387bd0ea357eca6156ac7ed579446fe129a2b0",
             "predict_queries": 422,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -1878,7 +1878,7 @@
               221
             ],
             "npz_sha256": "b68ba9d85d2777877dd0a86332537c7816a076164aabea76b5dc2716952f1ed8",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_family_outer_2_LV-Eval_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_family_outer_2_LV-Eval_target.npz",
             "predict_indices_sha256": "c12d06eabb9dcb77f845ed53a62cf3c3d7c6076211e2cd214bd32a41b152e4cf",
             "predict_queries": 4790,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -1901,7 +1901,7 @@
               431
             ],
             "npz_sha256": "7f0532e7943ca7fdd645c07c73da2bcdaea56e5c133117d50291bb39cbf7df22",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_family_outer_2_LV-Eval_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_family_outer_2_LV-Eval_target.npz",
             "predict_indices_sha256": "c12d06eabb9dcb77f845ed53a62cf3c3d7c6076211e2cd214bd32a41b152e4cf",
             "predict_queries": 4790,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -1929,7 +1929,7 @@
               221
             ],
             "npz_sha256": "b9f018a471c7c8f28393cad635fbc084a6fface0eb1244eb0f0cd5fa6216c30d",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_family_outer_3_LongBench_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_family_outer_3_LongBench_target.npz",
             "predict_indices_sha256": "57f8ba5415865f28a6a4d5e822167cf374518907283b2b09142c5c40de4c4b9c",
             "predict_queries": 200,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -1952,7 +1952,7 @@
               431
             ],
             "npz_sha256": "cd7a0b4c2a46dcbd55ef663ec7cdc017e71485a9b7d806625ecd8487f957c0dd",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_family_outer_3_LongBench_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_family_outer_3_LongBench_target.npz",
             "predict_indices_sha256": "57f8ba5415865f28a6a4d5e822167cf374518907283b2b09142c5c40de4c4b9c",
             "predict_queries": 200,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -1992,7 +1992,7 @@
               221
             ],
             "npz_sha256": "f2ba01d4e45cefa8cf91ecfc766242d90d11d9f8749f063704b885e19281ab68",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_0_cmrc_mixup_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_0_cmrc_mixup_target.npz",
             "predict_indices_sha256": "702746827e553786bb026ac120cb58745fef3d3f554c33891809001cc37639f0",
             "predict_queries": 1000,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2015,7 +2015,7 @@
               431
             ],
             "npz_sha256": "b53b684b934e19e1d4bdb0491f68199c15fe75a6919c272d5b6b1cb3c84a96ec",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_0_cmrc_mixup_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_0_cmrc_mixup_target.npz",
             "predict_indices_sha256": "702746827e553786bb026ac120cb58745fef3d3f554c33891809001cc37639f0",
             "predict_queries": 1000,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2043,7 +2043,7 @@
               221
             ],
             "npz_sha256": "789d1f75765a2c3c4b0514fb377f8216f67305c177fd564a5ae2bedd94bd994f",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_1_factrecall_en_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_1_factrecall_en_target.npz",
             "predict_indices_sha256": "17db61bf83c86a1b36aaa6abfdd2d54e82ddafcc59c08cc850984b3fa6ec82b1",
             "predict_queries": 1000,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2066,7 +2066,7 @@
               431
             ],
             "npz_sha256": "bbf90622e11029a95ffb2b57a98fac999f3d264b15250da70873aaa41345b3d9",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_1_factrecall_en_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_1_factrecall_en_target.npz",
             "predict_indices_sha256": "17db61bf83c86a1b36aaa6abfdd2d54e82ddafcc59c08cc850984b3fa6ec82b1",
             "predict_queries": 1000,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2094,7 +2094,7 @@
               221
             ],
             "npz_sha256": "d5c9dbdc5b078c2c9a53367803c1d933340728a38e80390e52611caf397644e7",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_2_factrecall_zh_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_2_factrecall_zh_target.npz",
             "predict_indices_sha256": "98900d180f47a84e1e8b44e31bf48d89048073ba1e022175fcee4ab10c81f768",
             "predict_queries": 1000,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2117,7 +2117,7 @@
               431
             ],
             "npz_sha256": "ae4177036047a4d264770e19268735fb9194a127a54322d0734d9538398ab524",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_2_factrecall_zh_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_2_factrecall_zh_target.npz",
             "predict_indices_sha256": "98900d180f47a84e1e8b44e31bf48d89048073ba1e022175fcee4ab10c81f768",
             "predict_queries": 1000,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2145,7 +2145,7 @@
               221
             ],
             "npz_sha256": "a6403615ce80460e8578e699c12c0a0ca73376219b5800dda5f07fb74fd4f4d1",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_3_hotpotwikiqa_mixup_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_3_hotpotwikiqa_mixup_target.npz",
             "predict_indices_sha256": "726665606d5594d08fd9d86a8148d9c550f52edb1268cc6aeccefcec5af48fd0",
             "predict_queries": 620,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2168,7 +2168,7 @@
               431
             ],
             "npz_sha256": "357386ad9b2a5153f7639cc038d8d9444d92d18d858a098dab325144c9d9e631",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_3_hotpotwikiqa_mixup_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_3_hotpotwikiqa_mixup_target.npz",
             "predict_indices_sha256": "726665606d5594d08fd9d86a8148d9c550f52edb1268cc6aeccefcec5af48fd0",
             "predict_queries": 620,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2196,7 +2196,7 @@
               221
             ],
             "npz_sha256": "118f0b08403d6b08ac19c186ef64e98d582db81e592e792e9db1d98c1d6dbed9",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_4_infinitebench_longbook_qa_eng_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_4_infinitebench_longbook_qa_eng_target.npz",
             "predict_indices_sha256": "db48c56ff5f857e46a0b2a18da465989c588427f24ca4c737de85a33c983bd2b",
             "predict_queries": 351,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2219,7 +2219,7 @@
               431
             ],
             "npz_sha256": "b23c7996b8aae3c99317878bcbe9a575f4584c94f475ba8fc55f05aada0a9fcd",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_4_infinitebench_longbook_qa_eng_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_4_infinitebench_longbook_qa_eng_target.npz",
             "predict_indices_sha256": "db48c56ff5f857e46a0b2a18da465989c588427f24ca4c737de85a33c983bd2b",
             "predict_queries": 351,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2247,7 +2247,7 @@
               221
             ],
             "npz_sha256": "ceaf09ab2ed3c6d5213637509d3c34153ba9d35bc412a9d1363b06c312b3a7cb",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_5_leval_financial_qa_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_5_leval_financial_qa_target.npz",
             "predict_indices_sha256": "668df12e33e2e74cd1e6c6cb71d1172b4921ab8c3368fc23fb22bae17d724e8f",
             "predict_queries": 52,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2270,7 +2270,7 @@
               431
             ],
             "npz_sha256": "5c976cb70310ed84756fe686c3493c558cc74c1f8a3f3c60df20451c5ddffac5",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_5_leval_financial_qa_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_5_leval_financial_qa_target.npz",
             "predict_indices_sha256": "668df12e33e2e74cd1e6c6cb71d1172b4921ab8c3368fc23fb22bae17d724e8f",
             "predict_queries": 52,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2298,7 +2298,7 @@
               221
             ],
             "npz_sha256": "6155ad912e2b91748d1b4cc954025a696ed60d7f6054b1e37852fdf6e3405518",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_6_leval_legal_contract_qa_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_6_leval_legal_contract_qa_target.npz",
             "predict_indices_sha256": "7dbd280bee32521bae51c316119f7ab25c9d8570e264eafe6bc6be0ae4d9314b",
             "predict_queries": 130,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2321,7 +2321,7 @@
               431
             ],
             "npz_sha256": "e94cf86c777bed88303cc65d5f69b2b58e2755ed176f7fa4102902b52906a22d",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_6_leval_legal_contract_qa_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_6_leval_legal_contract_qa_target.npz",
             "predict_indices_sha256": "7dbd280bee32521bae51c316119f7ab25c9d8570e264eafe6bc6be0ae4d9314b",
             "predict_queries": 130,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2349,7 +2349,7 @@
               221
             ],
             "npz_sha256": "7362779f1b077a828a588e7652baaeb655faf925609df3373dc93a2e93aef478",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_7_leval_multidoc_qa_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_7_leval_multidoc_qa_target.npz",
             "predict_indices_sha256": "0393ba787f127dd003c41788734bd23b0a8f3aaffadfc0a78b7ba9157cdd06d1",
             "predict_queries": 136,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2372,7 +2372,7 @@
               431
             ],
             "npz_sha256": "6c7523000de8b5c834046a38c163c767bb9054e53ea6bef6a6a880cd0a482bcb",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_7_leval_multidoc_qa_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_7_leval_multidoc_qa_target.npz",
             "predict_indices_sha256": "0393ba787f127dd003c41788734bd23b0a8f3aaffadfc0a78b7ba9157cdd06d1",
             "predict_queries": 136,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2400,7 +2400,7 @@
               221
             ],
             "npz_sha256": "dc47ac650034f6a8012ed596bef2d1e6b9ab0f2db393db0968e6bd6c25c007a9",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_8_leval_natural_question_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_8_leval_natural_question_target.npz",
             "predict_indices_sha256": "225cdad9cc9ed13b3f187b1ec70f336d51340f9e8d109e72455f85997b24a306",
             "predict_queries": 104,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2423,7 +2423,7 @@
               431
             ],
             "npz_sha256": "422da2491516aacd150e2a0fa7bdc1129b32c57894feb2f25c5fe009af7eea5a",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_8_leval_natural_question_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_8_leval_natural_question_target.npz",
             "predict_indices_sha256": "225cdad9cc9ed13b3f187b1ec70f336d51340f9e8d109e72455f85997b24a306",
             "predict_queries": 104,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2451,7 +2451,7 @@
               221
             ],
             "npz_sha256": "af25337cb3d24c8c4769e1e78f29b75a68a1d39280c90744413c9fd4424fc330",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_9_longbench_triviaqa_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_9_longbench_triviaqa_target.npz",
             "predict_indices_sha256": "57f8ba5415865f28a6a4d5e822167cf374518907283b2b09142c5c40de4c4b9c",
             "predict_queries": 200,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2474,7 +2474,7 @@
               431
             ],
             "npz_sha256": "6787c2a93f316fd4345a1334730837cc837820070dc3afb700b3e99cc3230c56",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_9_longbench_triviaqa_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_9_longbench_triviaqa_target.npz",
             "predict_indices_sha256": "57f8ba5415865f28a6a4d5e822167cf374518907283b2b09142c5c40de4c4b9c",
             "predict_queries": 200,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2502,7 +2502,7 @@
               221
             ],
             "npz_sha256": "a7ea8d88235508310b9cabb9b6aa18efa0c0d03b6f1031f73d0f323a51e6590e",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_10_multifieldqa_en_mixup_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_10_multifieldqa_en_mixup_target.npz",
             "predict_indices_sha256": "510fb54a619814c3064c4a1c58217a3604dccfdbce405a1b86f21e7edb9175ef",
             "predict_queries": 505,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2525,7 +2525,7 @@
               431
             ],
             "npz_sha256": "cedd08389810d89a3c206809e4c546c561146eabd88f170719b1afa1a32c19d7",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_10_multifieldqa_en_mixup_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_10_multifieldqa_en_mixup_target.npz",
             "predict_indices_sha256": "510fb54a619814c3064c4a1c58217a3604dccfdbce405a1b86f21e7edb9175ef",
             "predict_queries": 505,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2553,7 +2553,7 @@
               221
             ],
             "npz_sha256": "2f269ac639858234d27d2871bf22756584c12a491047d4f91e8f839a4025b6de",
-            "path": "analysis/successor_v6_r4_raw_prediction_cache_20260720/raw_task_outer_11_multifieldqa_zh_mixup_target.npz",
+            "path": "analysis/parc_v6_r4_raw_prediction_cache_20260720/raw_task_outer_11_multifieldqa_zh_mixup_target.npz",
             "predict_indices_sha256": "4a8e76bd744fa0de99f691b65c6ce36f7b7c6498379c870f0c203d5999a30333",
             "predict_queries": 665,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2576,7 +2576,7 @@
               431
             ],
             "npz_sha256": "7e46634a682a9529b0420b90bd9c605b88fea848e684629b4ee0bafe64f1d113",
-            "path": "analysis/successor_v8_relative_prediction_cache_20260720/relative_task_outer_11_multifieldqa_zh_mixup_target.npz",
+            "path": "analysis/parc_v8_relative_prediction_cache_20260720/relative_task_outer_11_multifieldqa_zh_mixup_target.npz",
             "predict_indices_sha256": "4a8e76bd744fa0de99f691b65c6ce36f7b7c6498379c870f0c203d5999a30333",
             "predict_queries": 665,
             "protocol_family": "R4-HGB-raw-prediction-cache",
@@ -2604,7 +2604,7 @@
       "units": 12
     }
   },
-  "protocol": "Successor-v9-dualview-final-model-training-freeze-20260720-v2",
+  "protocol": "PARC-v9-dualview-final-model-training-freeze-20260720-v2",
   "status": "FROZEN_FINAL_MODEL_NOT_FORMALLY_CONFIRMED",
   "training": {
     "anchor_candidate_sha256": "3f3edd0127d11c0e27bdd80e374cd80e9469a6979b9b2f2ef1c06020c3f4b8bb",
@@ -2657,7 +2657,7 @@
     "tasks": 12
   },
   "verified_development": {
-    "directory": "analysis/successor_v9_dualview_mean_development_r9_20260720",
+    "directory": "analysis/parc_v9_dualview_mean_development_r9_20260720",
     "independent_verification_sha256": "e5ae092902d357ffa546e5894325ffafd2673f8dc8e26b285884b6fd8512ddc1",
     "summary_sha256": "b807d4a9cb2dbe23018f9a8da25257fe176f8cd35dc5343c9e8e4f143211fed9",
     "summary_status": "COMPLETE_OPENED_DEVELOPMENT_NESTED_R9_DUALVIEW_MEAN_UNCALIBRATED_ROBUST_ANCHOR_HGB_PASS"
@@ -2676,8 +2676,8 @@
       "minimum_chunk_compression": 0.11111111111111116,
       "queries": 18035,
       "selected_method_counts": {
-        "SmartMemory_CompressedDense_R45_k8": 3814,
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8": 14221
+        "PARC_CompressedDense_R45_k8": 3814,
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8": 14221
       },
       "selection_type_counts": {
         "existing_dense_order_equivalent": 17636,
@@ -2686,13 +2686,13 @@
       "type": "querywise_max_compression_dense_order_equivalent"
     },
     "anchor_decisions_sha256": "e67645dd875d7c28ef79a78d8ea290ca2061c345caccab56bb2dc0b9742277e5",
-    "directory": "analysis/successor_v9_formal_feature_anchor_parity_20260720_v3",
+    "directory": "analysis/parc_v9_formal_feature_anchor_parity_20260720_v3",
     "formal_predictions_answers_f1_or_scores_used": false,
     "formal_query_order_sha256": "11864eac123980f69a805edffaec6a1d8506b066b2fc372adf9bce7e66552d7e",
     "formal_raw_feature_tensor_sha256": "cb23ccd14e808458df6e9b324efd27f75b11b32346da4b867a3ae5c34824ee7a",
     "formal_relative_feature_tensor_sha256": "0e1d9ed3eb8296a7f975a92f9f347b8c0ae1b259f3728ac9301b6b6bf3e950cc",
     "prediction_free": true,
-    "protocol": "Successor-v9-formal-feature-anchor-parity-audit-20260720-v3",
+    "protocol": "PARC-v9-formal-feature-anchor-parity-audit-20260720-v3",
     "scope": "formal_full",
     "status": "PASS",
     "summary_sha256": "b44af17b80c0f45b25c05c54572efd7aabaaf114f71a0a4ceddfe094302e0f65"

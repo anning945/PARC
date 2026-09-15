@@ -31,42 +31,42 @@ import parc_compat_runtime as legacy
 import parc_runtime_v3 as deployment_v3
 
 
-PROTOCOL = "Successor-v9-dualview-selector-runtime-20260720-v2"
+PROTOCOL = "PARC-v9-dualview-selector-runtime-20260720-v2"
 FROZEN_MODEL_PROTOCOL = (
-    "Successor-v9-dualview-final-model-training-freeze-20260720-v2"
+    "PARC-v9-dualview-final-model-training-freeze-20260720-v2"
 )
 EXPECTED_MODEL_SHA256 = (
-    "612f952f3046ebb13d4c087f41f9666a9d33cd8e15f050f7b262cc558a15e1ab"
+    "b7f4563dca7ce2d4a92e9b2fd940b09268455bc053977d3cf236300a2934c42f"
 )
 EXPECTED_MANIFEST_SHA256 = (
-    "5eff9281c28e703a0b96ad9abb641b8404093605c9bdb73fbc8b4e36b3029b0f"
+    "68e0d10638799b5358b417f868c095f58e62383a6974510648861ede12dd1015"
 )
 MODEL_MANIFEST_NAME = "parc_frozen_selector_manifest.json"
 
 DENSE_METHOD = "FullPool_Dense_k8"
-SAFE_METHOD = "SmartMemory_CompressedDense_R45_k8"
+SAFE_METHOD = "PARC_CompressedDense_R45_k8"
 QUALITY_CANDIDATES = (
-    "SmartMemory_CompressedDense_DocOrder_R45_k8",
-    "SmartMemory_CompressedDense_RRFOrder_R45_k8",
-    "SmartMemory_CompressedDense_RerankOrder_R45_k8",
-    "SmartMemory_Hybrid_BM25_D7A1_R45_k8",
-    "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
-    "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
-    "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
-    "SmartMemory_Hybrid_RRF_D6A2_R45_k8",
-    "SmartMemory_Hybrid_Rerank_D7A1_M10_R45_k8",
+    "PARC_CompressedDense_DocOrder_R45_k8",
+    "PARC_CompressedDense_RRFOrder_R45_k8",
+    "PARC_CompressedDense_RerankOrder_R45_k8",
+    "PARC_Hybrid_BM25_D7A1_R45_k8",
+    "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
+    "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
+    "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
+    "PARC_Hybrid_RRF_D6A2_R45_k8",
+    "PARC_Hybrid_Rerank_D7A1_M10_R45_k8",
 )
 ANCHOR_CANDIDATES = (
-    "SmartMemory_CompressedDense_DocOrder_R45_k8",
-    "SmartMemory_CompressedDense_R45_k8",
-    "SmartMemory_CompressedDense_RRFOrder_R45_k8",
-    "SmartMemory_CompressedDense_RerankOrder_R45_k8",
-    "SmartMemory_Hybrid_BM25_D7A1_R45_k8",
-    "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
-    "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
-    "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
-    "SmartMemory_Hybrid_RRF_D6A2_R45_k8",
-    "SmartMemory_Hybrid_Rerank_D7A1_M10_R45_k8",
+    "PARC_CompressedDense_DocOrder_R45_k8",
+    "PARC_CompressedDense_R45_k8",
+    "PARC_CompressedDense_RRFOrder_R45_k8",
+    "PARC_CompressedDense_RerankOrder_R45_k8",
+    "PARC_Hybrid_BM25_D7A1_R45_k8",
+    "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
+    "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
+    "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
+    "PARC_Hybrid_RRF_D6A2_R45_k8",
+    "PARC_Hybrid_Rerank_D7A1_M10_R45_k8",
 )
 
 EXPECTED_POLICY = {

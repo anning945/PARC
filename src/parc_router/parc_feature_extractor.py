@@ -20,7 +20,7 @@ from pathlib import Path
 from typing import Any, Iterable, Mapping, Sequence
 
 
-PROTOCOL = "AdaptiveSmartMemory-v3-label-free-enhanced-features-v1"
+PROTOCOL = "AdaptivePARC-v3-label-free-enhanced-features-v1"
 EXPECTED_TASKS = 12
 EXPECTED_METHODS = 11
 EXPECTED_QUERY_ROWS = 5763

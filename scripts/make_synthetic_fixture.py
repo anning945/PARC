@@ -41,7 +41,7 @@ def main() -> None:
             for name in sorted(names)
         },
     }]
-    output = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "examples" / "synthetic_task_input.json"
+    output = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "examples" / "parc_synthetic_task_input.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     print(output)

@@ -3,7 +3,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 PYTHON="${PYTHON:-python}"
 MODEL="$ROOT/artifacts/parc_selector/parc_frozen_selector.joblib"
-INPUT="$ROOT/examples/synthetic_task_input.json"
+INPUT="$ROOT/examples/parc_synthetic_task_input.json"
 OUTPUT="${1:-$ROOT/examples/synthetic_routing_output.json}"
 
 "$PYTHON" - <<'PY'

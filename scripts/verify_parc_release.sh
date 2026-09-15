@@ -35,6 +35,6 @@ for line in (artifact_root / "SHA256SUMS").read_text(encoding="utf-8").splitline
         raise SystemExit(f"Artifact SHA256 mismatch: {relative}: {digest}")
 print("Artifact SHA256SUMS: OK")
 PY
-PYTHON="$PYTHON" bash scripts/run_self_test.sh
-PYTHON="$PYTHON" bash scripts/run_release_example.sh "${1:-$ROOT/examples/synthetic_routing_output.json}"
+PYTHON="$PYTHON" bash scripts/run_parc_self_test.sh
+PYTHON="$PYTHON" bash scripts/run_parc_example.sh "${1:-$ROOT/examples/synthetic_routing_output.json}"
 echo "PASS PARC release verification"

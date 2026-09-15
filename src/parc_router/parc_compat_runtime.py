@@ -28,7 +28,7 @@ import parc_feature_extractor as enhanced
 import parc_selector as selector
 
 
-PROTOCOL = "Successor-v2-selector-runtime-20260718"
+PROTOCOL = "PARC-v2-selector-runtime-20260718"
 EXPECTED_MODEL_SHA256 = (
     "ac633d046f06791d6b843360f5752a7791d7f7a542bb3b15ef308ab1ed986450"
 )

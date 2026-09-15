@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Explore the identity-free Adaptive-v3 successor with a CJK router.
+"""Explore the identity-free Adaptive-v3 parc with a CJK router.
 
 This is an opened-development diagnostic.  It intentionally reports strict
 LOTO/LOFO task outcomes and never promotes a configuration to confirmation.
-The safe default is SmartMemory_CompressedDense_R45_k8, whose generated
+The safe default is PARC_CompressedDense_R45_k8, whose generated
 answers are exactly Dense-equivalent on the verified development table while
 retaining positive chunk compression.  A deterministic structural router
 handles CJK-majority tasks using only question-script statistics and a
@@ -27,11 +27,11 @@ import numpy as np
 
 
 EPS = 1e-12
-SAFE_METHOD = "SmartMemory_CompressedDense_R45_k8"
+SAFE_METHOD = "PARC_CompressedDense_R45_k8"
 DENSE_METHOD = "FullPool_Dense_k8"
-DOC_ORDER_METHOD = "SmartMemory_CompressedDense_DocOrder_R45_k8"
+DOC_ORDER_METHOD = "PARC_CompressedDense_DocOrder_R45_k8"
 LANG_MARGIN_METHOD = (
-    "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8"
+    "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8"
 )
 
 # Frozen opened-development structural rule.  The normalized margin is
@@ -215,42 +215,42 @@ PROFILE_FEATURES = (
 PORTFOLIOS = {
     "all": None,
     "no_docorder": {
-        "SmartMemory_CompressedDense_RRFOrder_R45_k8",
-        "SmartMemory_CompressedDense_RerankOrder_R45_k8",
-        "SmartMemory_Hybrid_BM25_D7A1_R45_k8",
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
-        "SmartMemory_Hybrid_RRF_D6A2_R45_k8",
-        "SmartMemory_Hybrid_Rerank_D7A1_M10_R45_k8",
+        "PARC_CompressedDense_RRFOrder_R45_k8",
+        "PARC_CompressedDense_RerankOrder_R45_k8",
+        "PARC_Hybrid_BM25_D7A1_R45_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
+        "PARC_Hybrid_RRF_D6A2_R45_k8",
+        "PARC_Hybrid_Rerank_D7A1_M10_R45_k8",
     },
     "no_rrforder": {
-        "SmartMemory_CompressedDense_DocOrder_R45_k8",
-        "SmartMemory_CompressedDense_RerankOrder_R45_k8",
-        "SmartMemory_Hybrid_BM25_D7A1_R45_k8",
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
-        "SmartMemory_Hybrid_RRF_D6A2_R45_k8",
-        "SmartMemory_Hybrid_Rerank_D7A1_M10_R45_k8",
+        "PARC_CompressedDense_DocOrder_R45_k8",
+        "PARC_CompressedDense_RerankOrder_R45_k8",
+        "PARC_Hybrid_BM25_D7A1_R45_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
+        "PARC_Hybrid_RRF_D6A2_R45_k8",
+        "PARC_Hybrid_Rerank_D7A1_M10_R45_k8",
     },
     "hybrid": {
-        "SmartMemory_Hybrid_BM25_D7A1_R45_k8",
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
-        "SmartMemory_Hybrid_RRF_D6A2_R45_k8",
-        "SmartMemory_Hybrid_Rerank_D7A1_M10_R45_k8",
+        "PARC_Hybrid_BM25_D7A1_R45_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R45_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R55_k8",
+        "PARC_Hybrid_RRF_D6A2_R45_k8",
+        "PARC_Hybrid_Rerank_D7A1_M10_R45_k8",
     },
     "robust_hybrid": {
-        "SmartMemory_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
-        "SmartMemory_Hybrid_RRF_D6A2_R45_k8",
-        "SmartMemory_Hybrid_Rerank_D7A1_M10_R45_k8",
+        "PARC_Hybrid_RRFXE_LangMargin_D7A1_EN25_CJK20_R35_k8",
+        "PARC_Hybrid_RRF_D6A2_R45_k8",
+        "PARC_Hybrid_Rerank_D7A1_M10_R45_k8",
     },
     "order": {
-        "SmartMemory_CompressedDense_DocOrder_R45_k8",
-        "SmartMemory_CompressedDense_RRFOrder_R45_k8",
-        "SmartMemory_CompressedDense_RerankOrder_R45_k8",
+        "PARC_CompressedDense_DocOrder_R45_k8",
+        "PARC_CompressedDense_RRFOrder_R45_k8",
+        "PARC_CompressedDense_RerankOrder_R45_k8",
     },
 }
 
@@ -488,7 +488,7 @@ def load_table(
     if np.any(method_data[SAFE_METHOD]["compression"] <= 0.0):
         raise ValueError("safe compressed method has non-positive compression")
     if enhanced is None:
-        raise ValueError("successor v2 requires enhanced structural features")
+        raise ValueError("parc v2 requires enhanced structural features")
     dense_enhanced_rows = [
         enhanced[(str(task[index]), int(sample[index]), DENSE_METHOD)]
         for index in range(len(keys))
@@ -805,7 +805,7 @@ def run(
     enhanced_path: Path | None = None,
 ) -> dict[str, Any]:
     if enhanced_path is None:
-        raise ValueError("--enhanced-features is required for successor v2")
+        raise ValueError("--enhanced-features is required for parc v2")
     table = load_table(path, enhanced_path)
     # Convenience mapping used by family-balanced weights.
     table["task_family"] = {

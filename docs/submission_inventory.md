@@ -13,15 +13,15 @@
 | `artifacts/parc_selector/` | Frozen routing model, manifest, and checksums |
 | `src/parc_router/*.py` | Frozen v9 routing runtime and feature construction dependencies |
 | `configs/parc_policy.json` | Route portfolio, policy constants, feature dimensions |
-| `scripts/run_self_test.sh` | Deterministic runtime self-test |
+| `scripts/run_parc_self_test.sh` | Deterministic runtime self-test |
 | `scripts/make_synthetic_fixture.py` | Synthetic retrieval-only schema fixture generator |
 | `docs/*.md` | Input schema, benchmark provenance, release boundary, and submission inventory |
-| `results/quality_compression_pareto_verified.csv` | Score-only operating-point summary |
-| `results/task_quality_verified_20260731.csv` | Score-only task summary |
-| `results/verified_release_collection_summary.json` | Release audit collection summary |
-| `examples/synthetic_task_input.json` | Synthetic input for schema inspection only |
+| `results/parc_quality_compression_pareto_verified.csv` | Score-only operating-point summary |
+| `results/parc_task_quality_verified.csv` | Score-only task summary |
+| `results/parc_release_summary.json` | Release audit collection summary |
+| `examples/parc_synthetic_task_input.json` | Synthetic input for schema inspection only |
 | `SHA256SUMS` | File integrity record |
-| `scripts/verify_release.sh` | Checksum, dependency, self-test, and example verification |
+| `scripts/verify_parc_release.sh` | Checksum, dependency, self-test, and example verification |
 
 ## Do not upload / 不要上传
 

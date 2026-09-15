@@ -68,14 +68,14 @@ python src/parc_router/parc_runtime.py \
 Run the included synthetic routing example:
 
 ```bash
-bash scripts/run_release_example.sh
+bash scripts/run_parc_example.sh
 ```
 
 When more than one Python installation is present, select the locked
 interpreter explicitly, for example:
 
 ```bash
-PYTHON=/path/to/python bash scripts/run_release_example.sh
+PYTHON=/path/to/python bash scripts/run_parc_example.sh
 ```
 
 The synthetic fixture is only for schema testing and must never be used as paper evidence.
@@ -84,7 +84,7 @@ Verify checksums, dependency versions, the self-test, and the synthetic
 routing example together:
 
 ```bash
-bash scripts/verify_release.sh
+bash scripts/verify_parc_release.sh
 ```
 
 The verification script checks both the source-file checksums and the frozen

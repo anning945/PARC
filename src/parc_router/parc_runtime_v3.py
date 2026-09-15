@@ -21,7 +21,7 @@ import parc_selector as selector
 import parc_compat_runtime as legacy
 
 
-PROTOCOL = "Successor-v3-shift-robust-selector-runtime-20260719"
+PROTOCOL = "PARC-v3-shift-robust-selector-runtime-20260719"
 # Patched to the verified model digest by the freeze/controller stage.
 EXPECTED_MODEL_SHA256 = "688016ccdc6446cb1a1782206c3de5545cb23ffeda65bdacfbf6da240b95c102"
 EPS = 1e-12
