@@ -6,6 +6,7 @@
 | --- | --- |
 | `README.md` | Bilingual project description and reproducibility boundary |
 | `CITATION.cff` | Software citation metadata |
+| `LICENSE` | MIT software license |
 | `requirements.txt` | Runtime dependencies with artifact-compatible pins |
 | `requirements-lock.txt` | Exact pip lock used for release verification |
 | `environment.yml` | Reproducible Python 3.10 conda environment |
@@ -37,8 +38,7 @@
 1. Public benchmark download and preprocessing instructions.
 2. Clean benchmark adapters and downstream generation/scoring code.
 3. A clean-environment end-to-end routing run using the released model bundle.
-4. A software license selected and approved by the authors.
-5. A final credential/private-path scan and a fixed commit hash linked to the
+4. A final credential/private-path scan and a fixed commit hash linked to the
    paper version.
 
 The current directory intentionally stops before these gates. It is ready for

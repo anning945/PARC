@@ -100,8 +100,7 @@ adapters, and an independent full replay.
 
 ### License
 
-No open-source license is asserted yet. The authors must choose and add a
-license before making the repository public.
+This software is released under the MIT License. See `LICENSE`.
 
 ## 中文说明
 
@@ -120,4 +119,4 @@ python -m pip install -r requirements-lock.txt
 python src/parc_router/parc_runtime.py --self-test
 ```
 
-当前尚未声明开源许可证，正式公开 GitHub 前需要由作者确定并加入许可证文件。
+本软件采用 MIT License，具体条款见 `LICENSE`。

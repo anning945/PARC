@@ -31,8 +31,8 @@ subset of successful samples.
   v1 release. The later v2 archive is not the paper's pinned data revision.
 
 The PARC software license is independent from the licenses of these datasets.
-The PARC repository must include a separate software `LICENSE` file before
-public release.
+The PARC code is released under the MIT License in the repository root; that
+license does not grant rights to redistribute the benchmark data.
 
 ## Reproduction boundary
 
