@@ -1,0 +1,9 @@
+method,label,macro_f1,mean_chunk_compression,strict_compression_records,compression_records,pareto_optimal,dominated_by
+matched_dense,Dense,0.4515397474377658,0.0,0,18035,False,frozen_proposed;development_frozen_global_best;v9_raw_view_only;v9_relative_view_only;v9_without_querywise_anchor;v9_without_uncertainty_activation
+frozen_proposed,V9,0.4609936546895685,0.5649638000596191,18035,18035,True,
+fixed_safe_route,Fixed safe,0.4514204524802647,0.5309221173202483,18035,18035,False,frozen_proposed;development_frozen_global_best;v9_raw_view_only;v9_relative_view_only
+development_frozen_global_best,Fixed RRF,0.4694700736883577,0.5309221173202483,18035,18035,True,
+v9_raw_view_only,Raw only,0.45242975414172754,0.5646852903955087,18035,18035,False,frozen_proposed
+v9_relative_view_only,Relative only,0.4608210631740068,0.5624852870628811,18035,18035,False,frozen_proposed
+v9_without_querywise_anchor,Without anchor,0.4609936546895685,0.5302536481052427,18035,18035,False,frozen_proposed;development_frozen_global_best
+v9_without_uncertainty_activation,Without uncertainty,0.4638736832164476,0.5292729352059422,18035,18035,False,development_frozen_global_best

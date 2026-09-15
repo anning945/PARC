@@ -1,0 +1,4 @@
+# Versions used to load the released frozen selector artifact.
+numpy==2.2.6
+joblib==1.5.3
+scikit-learn==1.7.2

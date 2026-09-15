@@ -1,0 +1,5 @@
+# PARC routing-only release lock file.
+# Verified against the environment that produced and loads the frozen selector.
+numpy==2.2.6
+joblib==1.5.3
+scikit-learn==1.7.2
