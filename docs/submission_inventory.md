@@ -1,6 +1,6 @@
 # GitHub Submission Inventory / GitHub 提交清单
 
-## Upload now / 当前可以上传
+## Public inventory / 已公开清单
 
 | Path | Purpose |
 | --- | --- |
@@ -8,7 +8,7 @@
 | `CITATION.cff` | Software citation metadata |
 | `LICENSE` | MIT software license |
 | `requirements.txt` | Runtime dependencies with artifact-compatible pins |
-| `requirements-lock.txt` | Exact pip lock used for release verification |
+| `requirements-lock.txt` | Direct routing dependency pins, not a full transitive lock |
 | `environment.yml` | Reproducible Python 3.10 conda environment |
 | `requirements-benchmark.txt` | Adapter and prompt-reconstruction dependencies |
 | `artifacts/parc_selector/` | Frozen routing model, manifest, and checksums |
@@ -25,8 +25,11 @@
 | `results/parc_task_quality_verified.csv` | Score-only task summary |
 | `results/parc_release_summary.json` | Release audit collection summary |
 | `examples/parc_synthetic_task_input.json` | Synthetic input for schema inspection only |
-| `SHA256SUMS` | File integrity record |
-| `scripts/verify_parc_release.sh` | Checksum, dependency, self-test, and example verification |
+| `SHA256SUMS` | Tracked release-file hashes, excluding Git metadata and generated files |
+| `scripts/parc_release_checksums.py` | Check/update the source manifest and verify frozen artifacts |
+| `scripts/verify_parc_release.sh` | Checksum, dependency, unit-test, self-test, and example verification |
+| `.github/workflows/tests.yml` | Linux/macOS clean-checkout and source-archive tests |
+| `CONTRIBUTING.md` | Development tests, reporting issues and release maintenance |
 
 ## Do not upload / 不要上传
 
@@ -38,15 +41,17 @@
 - historical exploratory scripts, backups, temporary files, and Python caches;
 - author contact metadata unless the authors intentionally publish it.
 
-## Required before public release / 正式公开前必须补齐
+## Required for full reproduction / 全流程复现仍需补齐
 
 1. Upstream datasets must be downloaded by each user under their own licenses.
 2. A retrieval materializer and downstream generation/scoring code must be
    supplied for a full generator-level replay.
-3. A clean-environment end-to-end routing and generation run using the
-   released model bundle.
-4. A final credential/private-path scan and a fixed commit hash linked to the
+3. The selector training entry point and its development-data protocol.
+4. A clean-environment full-inventory routing, generation and scoring run
+   using the released model bundle.
+5. A final credential/private-path scan and a fixed commit hash linked to the
    paper version.
 
-The current directory intentionally stops before these gates. It is ready for
-internal review and packaging, not yet a complete public reproducibility claim.
+The repository is public as a routing release. It does not yet establish a
+complete end-to-end reproducibility claim. Raw datasets remain upstream even
+after the missing code stages are published.

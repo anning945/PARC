@@ -1,0 +1,38 @@
+name: Release checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10.20'
+          cache: pip
+          cache-dependency-path: |
+            requirements-lock.txt
+            requirements-benchmark.txt
+      - name: Install dependencies
+        run: python -m pip install -r requirements-benchmark.txt
+      - name: Verify clean checkout
+        run: bash scripts/verify_parc_release.sh
+      - name: Verify source archive without Git metadata
+        shell: bash
+        run: |
+          archive_dir="$(mktemp -d)"
+          git archive HEAD | tar -x -C "$archive_dir"
+          bash "$archive_dir/scripts/verify_parc_release.sh"
+      - name: Ensure tests did not modify release files
+        run: git diff --exit-code
