@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+*.joblib
+*.pkl
+*.pickle
+*.npz
+*.jsonl
+*.log
+outputs/
+models/
+data/
+cache/
+
+# The release includes the frozen selector artifact for deterministic routing.
+!artifacts/
+!artifacts/parc_selector/
+!artifacts/parc_selector/*.joblib
+!artifacts/parc_selector/*.json
+!artifacts/parc_selector/SHA256SUMS
+!configs/*.json
+!examples/*.json
+!results/*.json

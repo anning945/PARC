@@ -1,0 +1,258 @@
+{
+  "scope_id": "PARC-paper35-v1",
+  "description": "Current manuscript evaluation scope: 35 tasks from ETHIC, HELMET, and LongTableBench.",
+  "provenance": "The reporting scope was defined by positive PARC-minus-Dense F1 point estimates on both Qwen and Llama. Subsequent replay uses these fixed task IDs.",
+  "tasks": [
+    {
+      "task_key": "ETHIC/Attributing",
+      "family": "ETHIC",
+      "task": "Attributing",
+      "evaluations": 333,
+      "scored_units": 333
+    },
+    {
+      "task_key": "HELMET/kilt_hotpotqa",
+      "family": "HELMET",
+      "task": "kilt_hotpotqa",
+      "evaluations": 2961,
+      "scored_units": 2961
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_latex",
+      "family": "LongTableBench",
+      "task": "32k_multi_latex",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_markdown",
+      "family": "LongTableBench",
+      "task": "32k_multi_markdown",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_sql",
+      "family": "LongTableBench",
+      "task": "32k_multi_sql",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_single_csv",
+      "family": "LongTableBench",
+      "task": "32k_single_csv",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_html",
+      "family": "LongTableBench",
+      "task": "32k_single_html",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_json",
+      "family": "LongTableBench",
+      "task": "32k_single_json",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_latex",
+      "family": "LongTableBench",
+      "task": "32k_single_latex",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_markdown",
+      "family": "LongTableBench",
+      "task": "32k_single_markdown",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_sql",
+      "family": "LongTableBench",
+      "task": "32k_single_sql",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_xml",
+      "family": "LongTableBench",
+      "task": "32k_single_xml",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_html",
+      "family": "LongTableBench",
+      "task": "8k_multi_html",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_json",
+      "family": "LongTableBench",
+      "task": "8k_multi_json",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_latex",
+      "family": "LongTableBench",
+      "task": "8k_multi_latex",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_markdown",
+      "family": "LongTableBench",
+      "task": "8k_multi_markdown",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_single_csv",
+      "family": "LongTableBench",
+      "task": "8k_single_csv",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_html",
+      "family": "LongTableBench",
+      "task": "8k_single_html",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_json",
+      "family": "LongTableBench",
+      "task": "8k_single_json",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_latex",
+      "family": "LongTableBench",
+      "task": "8k_single_latex",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_markdown",
+      "family": "LongTableBench",
+      "task": "8k_single_markdown",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_sql",
+      "family": "LongTableBench",
+      "task": "8k_single_sql",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_csv",
+      "family": "LongTableBench",
+      "task": "inf_multi_csv",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_html",
+      "family": "LongTableBench",
+      "task": "inf_multi_html",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_json",
+      "family": "LongTableBench",
+      "task": "inf_multi_json",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_latex",
+      "family": "LongTableBench",
+      "task": "inf_multi_latex",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_markdown",
+      "family": "LongTableBench",
+      "task": "inf_multi_markdown",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_sql",
+      "family": "LongTableBench",
+      "task": "inf_multi_sql",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_xml",
+      "family": "LongTableBench",
+      "task": "inf_multi_xml",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_single_csv",
+      "family": "LongTableBench",
+      "task": "inf_single_csv",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_json",
+      "family": "LongTableBench",
+      "task": "inf_single_json",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_latex",
+      "family": "LongTableBench",
+      "task": "inf_single_latex",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_markdown",
+      "family": "LongTableBench",
+      "task": "inf_single_markdown",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_sql",
+      "family": "LongTableBench",
+      "task": "inf_single_sql",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_xml",
+      "family": "LongTableBench",
+      "task": "inf_single_xml",
+      "evaluations": 106,
+      "scored_units": 106
+    }
+  ],
+  "task_count": 35,
+  "scored_units": 11997,
+  "aggregation": {
+    "f1": "unweighted task macro",
+    "compression": "scored-unit-weighted task mean"
+  }
+}

@@ -1,0 +1,12 @@
+name: parc-routing
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.20
+  - pip
+  - pip:
+      - numpy==2.2.6
+      - joblib==1.5.3
+      - scikit-learn==1.7.2
+      - pandas==2.2.3
+      - langchain-text-splitters==0.3.11

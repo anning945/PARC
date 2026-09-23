@@ -1,0 +1,26 @@
+{
+  "protocol": "PARC-four-family-generation-v1",
+  "methods": ["dense", "parc"],
+  "decoding": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "num_beams": 1,
+    "max_input_tokens": 28672,
+    "target_input_tokens": 28416,
+    "use_cache": true,
+    "seed": 20260720
+  },
+  "max_new_tokens_by_family": {
+    "BAMBOO": 32,
+    "ETHIC": 4096,
+    "HELMET": 20,
+    "LongTableBench": 1024
+  },
+  "packing": {
+    "priority": ["history", "context", "instruction"],
+    "omission_marker": "\n[... omitted by frozen prediction-blind r3 prompt packing ...]\n",
+    "protected_segments_immutable": true,
+    "tokenizer_truncation": false
+  }
+}

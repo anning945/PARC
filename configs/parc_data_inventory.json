@@ -1,0 +1,798 @@
+{
+  "method": "PARC",
+  "scope": "metadata_only_paper_inventory",
+  "development_role": "Opened development data used for supervised fitting and policy selection; not untouched test data.",
+  "development_source_revisions": {
+    "LongBench": {
+      "repository": "THUDM/LongBench",
+      "dataset_revision": "5e628be450b7e67fb7ae6e201bd6d8f7056f7672",
+      "official_code_revision": "2e00731f8d0bff23dc4325161044d0ed8af94c1e"
+    },
+    "InfiniteBench": {
+      "repository": "xinrongzhang2022/InfiniteBench",
+      "dataset_revision": "90f0394333616266d9fe85824ceaf505093cbaa5",
+      "official_code_revision": "51d9b37b0f1790ead936df2243abbf7f0420e439"
+    },
+    "LV-Eval": {
+      "repository": "Infinigence/LVEval",
+      "dataset_revision": "86a3b0e6f2266281d481bcb46a0bda5b511cffb0",
+      "official_code_revision": "63e7ae939bd347c76b2cdb1cebfb216faca26897"
+    },
+    "L-Eval": {
+      "repository": "OpenLMLab/LEval",
+      "official_code_and_data_revision": "cd34b050269148aed75acbbe4a599873ad0f37e9"
+    }
+  },
+  "development_total_queries": 5763,
+  "development_tasks": [
+    {
+      "task": "longbench_triviaqa",
+      "family": "LongBench",
+      "queries": 200,
+      "selection_rule": "all official LongBench triviaqa test rows in source order",
+      "processed_sha256": "e9dd8e49d3a36389a46598f2a0c4a0b602d9dd68560f598e6aeacf2eea06d5a3",
+      "sample_order_sha256": "bea2e101aaffbb51bac7c9bc31246cc92867ea65c0c34964fcc329b0ebae69f6",
+      "loto_target_indices_sha256": "57f8ba5415865f28a6a4d5e822167cf374518907283b2b09142c5c40de4c4b9c",
+      "sources": [
+        {
+          "sha256": "cb45b11a4133c6bc1d6a44b0f8e701335ff1e543195db1103472e575857f7f64",
+          "bytes": 113932529,
+          "internal_file": "data/triviaqa.jsonl",
+          "internal_sha256": "ed2529de2e10b12c00f49981870c23c7c51667069cdd8d0740e1423ff337d7fa",
+          "file_name": "data.zip"
+        }
+      ]
+    },
+    {
+      "task": "infinitebench_longbook_qa_eng",
+      "family": "InfiniteBench",
+      "queries": 351,
+      "selection_rule": "all nonblank official longbook_qa_eng source rows in source order",
+      "processed_sha256": "ab7122af19a1c52a6fbce0d1d7a75105972c7df252952d758279769cbc868e19",
+      "sample_order_sha256": "587ec034bd461acf00221497618024be479e2e192076ef08173b6c15934f0572",
+      "loto_target_indices_sha256": "db48c56ff5f857e46a0b2a18da465989c588427f24ca4c737de85a33c983bd2b",
+      "sources": [
+        {
+          "sha256": "7f53a3aabd5445fa29f168914f13569c348406cfc88a3e495f3f2c13a0966ca4",
+          "bytes": 298297185,
+          "file_name": "longbook_qa_eng.jsonl"
+        }
+      ]
+    },
+    {
+      "task": "hotpotwikiqa_mixup",
+      "family": "LV-Eval",
+      "queries": 620,
+      "selection_rule": "all official rows at 16k, 32k, 64k, 128k, and 256k in fixed ascending-length order",
+      "processed_sha256": "f7537ea5695b547f88ed994eb3a29926248b340c04e6713a4459063a7bec971d",
+      "sample_order_sha256": "b737fe11e5bb2ef5c3f3820f0364c26300255d91d411f8c7133b67177fcdc546",
+      "loto_target_indices_sha256": "726665606d5594d08fd9d86a8148d9c550f52edb1268cc6aeccefcec5af48fd0",
+      "sources": [
+        {
+          "sha256": "e274aac22f6f4537817117e48ef613bde9943fb3b269008ad8d03c8fc3e912be",
+          "bytes": 152095506,
+          "length_files": [
+            {
+              "length_level": "16k",
+              "internal_file": "hotpotwikiqa_mixup/hotpotwikiqa_mixup_16k.jsonl",
+              "internal_sha256": "5207a71ff7eb405ff18cd65b76f7120a016abde4314e0b4fb81401c086208a7f",
+              "rows": 124
+            },
+            {
+              "length_level": "32k",
+              "internal_file": "hotpotwikiqa_mixup/hotpotwikiqa_mixup_32k.jsonl",
+              "internal_sha256": "5276316fd8fc79fe3046e2fd8ffec8c2af81d4b2fe5bcc4e67acaf2c193f7798",
+              "rows": 124
+            },
+            {
+              "length_level": "64k",
+              "internal_file": "hotpotwikiqa_mixup/hotpotwikiqa_mixup_64k.jsonl",
+              "internal_sha256": "a68b99b316847255d55083b8b3af46bfd5d518915928c8e33bca29e9abb37be5",
+              "rows": 124
+            },
+            {
+              "length_level": "128k",
+              "internal_file": "hotpotwikiqa_mixup/hotpotwikiqa_mixup_128k.jsonl",
+              "internal_sha256": "c5d28b00163cad27f153eeb6e107b89feef63f63c7f01ad89df8a07e02efadce",
+              "rows": 124
+            },
+            {
+              "length_level": "256k",
+              "internal_file": "hotpotwikiqa_mixup/hotpotwikiqa_mixup_256k.jsonl",
+              "internal_sha256": "f2dcede5cb052b745da3788d28da51f08c9f9c168f482f38021219d7b4f176c7",
+              "rows": 124
+            }
+          ],
+          "file_name": "hotpotwikiqa_mixup.zip"
+        }
+      ]
+    },
+    {
+      "task": "multifieldqa_en_mixup",
+      "family": "LV-Eval",
+      "queries": 505,
+      "selection_rule": "all official rows at 16k, 32k, 64k, 128k, and 256k in fixed ascending-length order",
+      "processed_sha256": "e3c2588542530676d7b128759b94225bd015ea617a8466cd74fb74d02a4b4cf0",
+      "sample_order_sha256": "aa0a9e248bad99cbe93b5268ac1baeffc038e8fec8097ef979f44925fd734bdb",
+      "loto_target_indices_sha256": "510fb54a619814c3064c4a1c58217a3604dccfdbce405a1b86f21e7edb9175ef",
+      "sources": [
+        {
+          "sha256": "7f054c741c3d2c858b329be4f40a515d052691939fde0e0ba56eea3eaee3e772",
+          "bytes": 111074983,
+          "length_files": [
+            {
+              "length_level": "16k",
+              "internal_file": "multifieldqa_en_mixup/multifieldqa_en_mixup_16k.jsonl",
+              "internal_sha256": "5d8df786209b43ecbd3027590c09848be20851eab4e97d5b0c4945b76fdbb35a",
+              "rows": 101
+            },
+            {
+              "length_level": "32k",
+              "internal_file": "multifieldqa_en_mixup/multifieldqa_en_mixup_32k.jsonl",
+              "internal_sha256": "205a27dc0a67c69fbe10ce504db6aecfa55308c8a93f1973fc60157c5d90dac6",
+              "rows": 101
+            },
+            {
+              "length_level": "64k",
+              "internal_file": "multifieldqa_en_mixup/multifieldqa_en_mixup_64k.jsonl",
+              "internal_sha256": "936e5e56955ed14fc5850ab148e1005c6fa806f5d58a3ffb2ad4b375468d7345",
+              "rows": 101
+            },
+            {
+              "length_level": "128k",
+              "internal_file": "multifieldqa_en_mixup/multifieldqa_en_mixup_128k.jsonl",
+              "internal_sha256": "310deda41faeb1d586cece3db86cbfd63c662031e99744f58125824814b7c6ab",
+              "rows": 101
+            },
+            {
+              "length_level": "256k",
+              "internal_file": "multifieldqa_en_mixup/multifieldqa_en_mixup_256k.jsonl",
+              "internal_sha256": "57260a25ff7bf41838f541bf7e053adf811d69299c13f42c465508ad5e38ed68",
+              "rows": 101
+            }
+          ],
+          "file_name": "multifieldqa_en_mixup.zip"
+        }
+      ]
+    },
+    {
+      "task": "multifieldqa_zh_mixup",
+      "family": "LV-Eval",
+      "queries": 665,
+      "selection_rule": "all official rows at 16k, 32k, 64k, 128k, and 256k in fixed ascending-length order",
+      "processed_sha256": "13aff67ed906dcf22dfa96e4532e2251de26dbb6432d55d13cdd8c6abd64da40",
+      "sample_order_sha256": "ec64e99be487fb80c878f9e7c3ea6d994ac951815577ca9a16fe41d84e2dbbe6",
+      "loto_target_indices_sha256": "4a8e76bd744fa0de99f691b65c6ce36f7b7c6498379c870f0c203d5999a30333",
+      "sources": [
+        {
+          "sha256": "bddda1fe0ab33a20f265f9de41bf86b0bf831baa225fe968c55c85e3da34f259",
+          "bytes": 69025733,
+          "length_files": [
+            {
+              "length_level": "16k",
+              "internal_file": "multifieldqa_zh_mixup/multifieldqa_zh_mixup_16k.jsonl",
+              "internal_sha256": "1a6caa3dbb062cf0cdb4e50943fb6a20e59f42ee147e3ee07c84d399126a2b6a",
+              "rows": 133
+            },
+            {
+              "length_level": "32k",
+              "internal_file": "multifieldqa_zh_mixup/multifieldqa_zh_mixup_32k.jsonl",
+              "internal_sha256": "a1c9ba91650d2042618cc9f1fd9e148eff879bee30aa4fd5411e4d742f623ab1",
+              "rows": 133
+            },
+            {
+              "length_level": "64k",
+              "internal_file": "multifieldqa_zh_mixup/multifieldqa_zh_mixup_64k.jsonl",
+              "internal_sha256": "c39328d57080a843fae4ae2fd6047fee81369378543b46094a543d0cb1559752",
+              "rows": 133
+            },
+            {
+              "length_level": "128k",
+              "internal_file": "multifieldqa_zh_mixup/multifieldqa_zh_mixup_128k.jsonl",
+              "internal_sha256": "03ceb4e7ede2465967b9f9686c7427ae9ef9ebda95ace7f396bd21f8095dc23e",
+              "rows": 133
+            },
+            {
+              "length_level": "256k",
+              "internal_file": "multifieldqa_zh_mixup/multifieldqa_zh_mixup_256k.jsonl",
+              "internal_sha256": "b09f20e93269b2851a233731d465755d795b5bb3a7c22242f9f2548686eab824",
+              "rows": 133
+            }
+          ],
+          "file_name": "multifieldqa_zh_mixup.zip"
+        }
+      ]
+    },
+    {
+      "task": "cmrc_mixup",
+      "family": "LV-Eval",
+      "queries": 1000,
+      "selection_rule": "all official rows at 16k, 32k, 64k, 128k, and 256k in fixed ascending-length order",
+      "processed_sha256": "b217e78fceb8ab8ba29f4f7576edb9029be88aa2a6d429830d8d5c0c0ca2bb18",
+      "sample_order_sha256": "49034f6d7dd0621ce665d26b0fd102c44b97bc1dee71be1bddd17dd4660172c3",
+      "loto_target_indices_sha256": "702746827e553786bb026ac120cb58745fef3d3f554c33891809001cc37639f0",
+      "sources": [
+        {
+          "sha256": "bb5cd2ee324f0a9fc407d38eebf9622c29596cffeac1c75b57e2faaab280aeda",
+          "bytes": 156383938,
+          "length_files": [
+            {
+              "length_level": "16k",
+              "internal_file": "cmrc_mixup/cmrc_mixup_16k.jsonl",
+              "internal_sha256": "79bd603a84151c333e1c0802746fe48a70ad15335c4d464633cb4875dd6f9bb6",
+              "rows": 200
+            },
+            {
+              "length_level": "32k",
+              "internal_file": "cmrc_mixup/cmrc_mixup_32k.jsonl",
+              "internal_sha256": "08ec10c186d7121e18a1afb7a1abe86c336dea0a2d7396b550a60f7033f6f7c2",
+              "rows": 200
+            },
+            {
+              "length_level": "64k",
+              "internal_file": "cmrc_mixup/cmrc_mixup_64k.jsonl",
+              "internal_sha256": "8aa4eedebd37c41057e632704748660d92a3faf199851048a5e7f3591565f47f",
+              "rows": 200
+            },
+            {
+              "length_level": "128k",
+              "internal_file": "cmrc_mixup/cmrc_mixup_128k.jsonl",
+              "internal_sha256": "6a2930c6b397559e47c769a947d182708317747bb63b1712eead9cf69b7f033d",
+              "rows": 200
+            },
+            {
+              "length_level": "256k",
+              "internal_file": "cmrc_mixup/cmrc_mixup_256k.jsonl",
+              "internal_sha256": "7ce00485247379fe26e075f585402b56b59d6ae70e8ba0a1dbfb5a6296728223",
+              "rows": 200
+            }
+          ],
+          "file_name": "cmrc_mixup.zip"
+        }
+      ]
+    },
+    {
+      "task": "factrecall_en",
+      "family": "LV-Eval",
+      "queries": 1000,
+      "selection_rule": "all official rows at 16k, 32k, 64k, 128k, and 256k in fixed ascending-length order",
+      "processed_sha256": "6bb483aa19e37a480303b907e9862409316e0702f640685b5b6f1154302ccf73",
+      "sample_order_sha256": "31ebd0fb7f0eb7eda6d0bfbcee9c70f4ab2e19dddfcb44070caab50f1e80147e",
+      "loto_target_indices_sha256": "17db61bf83c86a1b36aaa6abfdd2d54e82ddafcc59c08cc850984b3fa6ec82b1",
+      "sources": [
+        {
+          "sha256": "447b2fbf2b5db61bf53b88f7f7507d704ba598633ff9b107ea45f59bb087f99b",
+          "bytes": 147511025,
+          "length_files": [
+            {
+              "length_level": "16k",
+              "internal_file": "factrecall_en/factrecall_en_16k.jsonl",
+              "internal_sha256": "6f249edd794604c23c300bc701139d630361773e402a0f07aafde0bde02005a5",
+              "rows": 200
+            },
+            {
+              "length_level": "32k",
+              "internal_file": "factrecall_en/factrecall_en_32k.jsonl",
+              "internal_sha256": "e4d574f8a87cad15ee8f015b5b54307a06da54198c4dce525cd5146eb152b41e",
+              "rows": 200
+            },
+            {
+              "length_level": "64k",
+              "internal_file": "factrecall_en/factrecall_en_64k.jsonl",
+              "internal_sha256": "a7fcc9ebc0b2d6be6b1ee4ff19f8e4232109ee8a0e6f6945fc24ce3f1b903109",
+              "rows": 200
+            },
+            {
+              "length_level": "128k",
+              "internal_file": "factrecall_en/factrecall_en_128k.jsonl",
+              "internal_sha256": "a2b95d427ac00248a32a4a09dec510ef7c03669aafacfa120ccabeb52b42de04",
+              "rows": 200
+            },
+            {
+              "length_level": "256k",
+              "internal_file": "factrecall_en/factrecall_en_256k.jsonl",
+              "internal_sha256": "5fddbf0c0c69f6bd531adb89a8af3f488d288004948c01c8cc662f9ef54e8bfc",
+              "rows": 200
+            }
+          ],
+          "file_name": "factrecall_en.zip"
+        }
+      ]
+    },
+    {
+      "task": "factrecall_zh",
+      "family": "LV-Eval",
+      "queries": 1000,
+      "selection_rule": "all official rows at 16k, 32k, 64k, 128k, and 256k in fixed ascending-length order",
+      "processed_sha256": "f0334f0509ef924ebde8f50e771deead6d635d09cd1aa4cfbe7b1cd2e89b2c0d",
+      "sample_order_sha256": "83ef3853c792ee10a7da56c3c4857eca73d716e51195cfb808c332a406d8c7a8",
+      "loto_target_indices_sha256": "98900d180f47a84e1e8b44e31bf48d89048073ba1e022175fcee4ab10c81f768",
+      "sources": [
+        {
+          "sha256": "8dbfa6b4542db3d215b8063c21f7b9f3e1868752feba4143967398bdccd37586",
+          "bytes": 132204373,
+          "length_files": [
+            {
+              "length_level": "16k",
+              "internal_file": "factrecall_zh/factrecall_zh_16k.jsonl",
+              "internal_sha256": "a506d0587e2702d308a1882a2ac2b82088144e224f30a8d2f6c51a5fecb7b770",
+              "rows": 200
+            },
+            {
+              "length_level": "32k",
+              "internal_file": "factrecall_zh/factrecall_zh_32k.jsonl",
+              "internal_sha256": "2ae4274449a4ceba77c3c2be2984f5e5cca6a5d6893a3a83f8f8be6a61cc8bdd",
+              "rows": 200
+            },
+            {
+              "length_level": "64k",
+              "internal_file": "factrecall_zh/factrecall_zh_64k.jsonl",
+              "internal_sha256": "894726a9b7d169a9d4a417b7ad9600765e32cb7b1370d59f8dcbc166124df14c",
+              "rows": 200
+            },
+            {
+              "length_level": "128k",
+              "internal_file": "factrecall_zh/factrecall_zh_128k.jsonl",
+              "internal_sha256": "ca1ca16c6bd577df5e0ac1a9c359314a6dcaa5814be61730d33dba27fa481697",
+              "rows": 200
+            },
+            {
+              "length_level": "256k",
+              "internal_file": "factrecall_zh/factrecall_zh_256k.jsonl",
+              "internal_sha256": "0f7c8b1523fcace6c508c40e0dd1134425723deedd16d5e434c97272a0743d67",
+              "rows": 200
+            }
+          ],
+          "file_name": "factrecall_zh.zip"
+        }
+      ]
+    },
+    {
+      "task": "leval_financial_qa",
+      "family": "L-Eval",
+      "queries": 52,
+      "selection_rule": "select every official document with evaluation='f1', then expand every aligned instructions/outputs pair in source order",
+      "processed_sha256": "6a9944f876016e3d05449bd6cf338a898e36889f145f5313ab1b1c9022aac873",
+      "sample_order_sha256": "768e25cbb0e82ac813ab854e18929481bce20d8f107466e1efe2976c8461714c",
+      "loto_target_indices_sha256": "668df12e33e2e74cd1e6c6cb71d1172b4921ab8c3368fc23fb22bae17d724e8f",
+      "sources": [
+        {
+          "sha256": "e6507e3a195af133f254edf663b0fcaa8df1fc5912cd50a84e575df152912158",
+          "bytes": 234032,
+          "all_documents": 8,
+          "f1_documents": 6,
+          "evaluation_document_counts": {
+            "f1": 6,
+            "LLM": 1,
+            "human": 1
+          },
+          "file_name": "financial_qa.jsonl"
+        }
+      ]
+    },
+    {
+      "task": "leval_legal_contract_qa",
+      "family": "L-Eval",
+      "queries": 130,
+      "selection_rule": "select every official document with evaluation='f1', then expand every aligned instructions/outputs pair in source order",
+      "processed_sha256": "abe66c3a7fd8d7d68a8ce232ea36a42559d29bf53113fbf022a04b2a047bb80e",
+      "sample_order_sha256": "ccc03fd9416c497457bd98d5def33a2b23b0500e4353c28c10269445a2331db5",
+      "loto_target_indices_sha256": "7dbd280bee32521bae51c316119f7ab25c9d8570e264eafe6bc6be0ae4d9314b",
+      "sources": [
+        {
+          "sha256": "ed78010152c83effc5191592f92e2c0821f05329789cb546898d5d6290208dd8",
+          "bytes": 2676528,
+          "all_documents": 23,
+          "f1_documents": 20,
+          "evaluation_document_counts": {
+            "f1": 20,
+            "LLM": 2,
+            "human": 1
+          },
+          "file_name": "legal_contract_qa.jsonl"
+        }
+      ]
+    },
+    {
+      "task": "leval_multidoc_qa",
+      "family": "L-Eval",
+      "queries": 136,
+      "selection_rule": "select every official document with evaluation='f1', then expand every aligned instructions/outputs pair in source order",
+      "processed_sha256": "5ad04970f00840173381b3183756c4138c0b425bb410dcee5faf15ffdfc0619e",
+      "sample_order_sha256": "b842e0a13ae5535b1abe2aa4f9f56b713c3c8c3ff38ae76fe9cfa0a5e98a439f",
+      "loto_target_indices_sha256": "0393ba787f127dd003c41788734bd23b0a8f3aaffadfc0a78b7ba9157cdd06d1",
+      "sources": [
+        {
+          "sha256": "3f53fd749ff8c7300150f5c6895c73ee201fbd9f3e6785da859eadd36147e220",
+          "bytes": 411704,
+          "all_documents": 23,
+          "f1_documents": 20,
+          "evaluation_document_counts": {
+            "f1": 20,
+            "human": 3
+          },
+          "file_name": "multidoc_qa.jsonl"
+        }
+      ]
+    },
+    {
+      "task": "leval_natural_question",
+      "family": "L-Eval",
+      "queries": 104,
+      "selection_rule": "select every official document with evaluation='f1', then expand every aligned instructions/outputs pair in source order",
+      "processed_sha256": "658949366c467128fa090603a8fa8407439b6a0926e71a97b37326881106fd1a",
+      "sample_order_sha256": "9230c633c91c6b5d82b74fe6968eefb7194e9a007d5d5ee5714ab10d761c8b31",
+      "loto_target_indices_sha256": "225cdad9cc9ed13b3f187b1ec70f336d51340f9e8d109e72455f85997b24a306",
+      "sources": [
+        {
+          "sha256": "0daf58b082041c3e384d8ef990981c9e9cb5de7c49e9219ab9f8c1edb2dea568",
+          "bytes": 1538576,
+          "all_documents": 21,
+          "f1_documents": 20,
+          "evaluation_document_counts": {
+            "f1": 20,
+            "LLM": 1
+          },
+          "file_name": "natural_question.jsonl"
+        }
+      ]
+    }
+  ],
+  "evaluation_total_records_or_conversations": 12309,
+  "evaluation_total_scored_units": 18035,
+  "evaluation_tasks": [
+    {
+      "task_key": "BAMBOO/abshallu_16k",
+      "family": "BAMBOO",
+      "task": "abshallu_16k",
+      "evaluations": 200,
+      "scored_units": 200
+    },
+    {
+      "task_key": "BAMBOO/abshallu_4k",
+      "family": "BAMBOO",
+      "task": "abshallu_4k",
+      "evaluations": 200,
+      "scored_units": 200
+    },
+    {
+      "task_key": "BAMBOO/senhallu_16k",
+      "family": "BAMBOO",
+      "task": "senhallu_16k",
+      "evaluations": 200,
+      "scored_units": 200
+    },
+    {
+      "task_key": "BAMBOO/senhallu_4k",
+      "family": "BAMBOO",
+      "task": "senhallu_4k",
+      "evaluations": 200,
+      "scored_units": 200
+    },
+    {
+      "task_key": "ETHIC/Attributing",
+      "family": "ETHIC",
+      "task": "Attributing",
+      "evaluations": 333,
+      "scored_units": 333
+    },
+    {
+      "task_key": "ETHIC/Recalling",
+      "family": "ETHIC",
+      "task": "Recalling",
+      "evaluations": 662,
+      "scored_units": 662
+    },
+    {
+      "task_key": "HELMET/kilt_hotpotqa",
+      "family": "HELMET",
+      "task": "kilt_hotpotqa",
+      "evaluations": 2961,
+      "scored_units": 2961
+    },
+    {
+      "task_key": "HELMET/kilt_popqa_3",
+      "family": "HELMET",
+      "task": "kilt_popqa_3",
+      "evaluations": 882,
+      "scored_units": 882
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_csv",
+      "family": "LongTableBench",
+      "task": "32k_multi_csv",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_html",
+      "family": "LongTableBench",
+      "task": "32k_multi_html",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_json",
+      "family": "LongTableBench",
+      "task": "32k_multi_json",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_latex",
+      "family": "LongTableBench",
+      "task": "32k_multi_latex",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_markdown",
+      "family": "LongTableBench",
+      "task": "32k_multi_markdown",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_sql",
+      "family": "LongTableBench",
+      "task": "32k_multi_sql",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_multi_xml",
+      "family": "LongTableBench",
+      "task": "32k_multi_xml",
+      "evaluations": 61,
+      "scored_units": 181
+    },
+    {
+      "task_key": "LongTableBench/32k_single_csv",
+      "family": "LongTableBench",
+      "task": "32k_single_csv",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_html",
+      "family": "LongTableBench",
+      "task": "32k_single_html",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_json",
+      "family": "LongTableBench",
+      "task": "32k_single_json",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_latex",
+      "family": "LongTableBench",
+      "task": "32k_single_latex",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_markdown",
+      "family": "LongTableBench",
+      "task": "32k_single_markdown",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_sql",
+      "family": "LongTableBench",
+      "task": "32k_single_sql",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/32k_single_xml",
+      "family": "LongTableBench",
+      "task": "32k_single_xml",
+      "evaluations": 166,
+      "scored_units": 166
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_csv",
+      "family": "LongTableBench",
+      "task": "8k_multi_csv",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_html",
+      "family": "LongTableBench",
+      "task": "8k_multi_html",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_json",
+      "family": "LongTableBench",
+      "task": "8k_multi_json",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_latex",
+      "family": "LongTableBench",
+      "task": "8k_multi_latex",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_markdown",
+      "family": "LongTableBench",
+      "task": "8k_multi_markdown",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_sql",
+      "family": "LongTableBench",
+      "task": "8k_multi_sql",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_multi_xml",
+      "family": "LongTableBench",
+      "task": "8k_multi_xml",
+      "evaluations": 295,
+      "scored_units": 865
+    },
+    {
+      "task_key": "LongTableBench/8k_single_csv",
+      "family": "LongTableBench",
+      "task": "8k_single_csv",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_html",
+      "family": "LongTableBench",
+      "task": "8k_single_html",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_json",
+      "family": "LongTableBench",
+      "task": "8k_single_json",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_latex",
+      "family": "LongTableBench",
+      "task": "8k_single_latex",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_markdown",
+      "family": "LongTableBench",
+      "task": "8k_single_markdown",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_sql",
+      "family": "LongTableBench",
+      "task": "8k_single_sql",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/8k_single_xml",
+      "family": "LongTableBench",
+      "task": "8k_single_xml",
+      "evaluations": 269,
+      "scored_units": 269
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_csv",
+      "family": "LongTableBench",
+      "task": "inf_multi_csv",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_html",
+      "family": "LongTableBench",
+      "task": "inf_multi_html",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_json",
+      "family": "LongTableBench",
+      "task": "inf_multi_json",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_latex",
+      "family": "LongTableBench",
+      "task": "inf_multi_latex",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_markdown",
+      "family": "LongTableBench",
+      "task": "inf_multi_markdown",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_sql",
+      "family": "LongTableBench",
+      "task": "inf_multi_sql",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_multi_xml",
+      "family": "LongTableBench",
+      "task": "inf_multi_xml",
+      "evaluations": 56,
+      "scored_units": 184
+    },
+    {
+      "task_key": "LongTableBench/inf_single_csv",
+      "family": "LongTableBench",
+      "task": "inf_single_csv",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_html",
+      "family": "LongTableBench",
+      "task": "inf_single_html",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_json",
+      "family": "LongTableBench",
+      "task": "inf_single_json",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_latex",
+      "family": "LongTableBench",
+      "task": "inf_single_latex",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_markdown",
+      "family": "LongTableBench",
+      "task": "inf_single_markdown",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_sql",
+      "family": "LongTableBench",
+      "task": "inf_single_sql",
+      "evaluations": 106,
+      "scored_units": 106
+    },
+    {
+      "task_key": "LongTableBench/inf_single_xml",
+      "family": "LongTableBench",
+      "task": "inf_single_xml",
+      "evaluations": 106,
+      "scored_units": 106
+    }
+  ],
+  "evaluation_source_details": "docs/benchmarks.md",
+  "boundary": "All eligible records in the named subsets, not all tasks offered by each upstream benchmark. No questions, answers, predictions or per-example scores are included.",
+  "frozen_model_manifest_sha256": "68e0d10638799b5358b417f868c095f58e62383a6974510648861ede12dd1015"
+}

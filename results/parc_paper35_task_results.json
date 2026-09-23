@@ -1,0 +1,1490 @@
+{
+  "scope_id": "PARC-paper35-v1",
+  "status": "REAGGREGATED_VERIFIED_TASK_SUMMARIES_NOT_NEW_REPLAY",
+  "source_sha256": {
+    "selected_35_verified.json": "1a411e52f5cf318d5daf18b65c4c6432bf64a56861601011f83f14162a56f1d8",
+    "verified_controls_score_only_summary.json": "38b9ae572322659d66c644b357470c7e7d0082571c129bd0b36e69ed5b43907d",
+    "verified_llama_score_only_summary.json": "5344e3a49360dc987459b3ce0c204c53dd2f2fbd24a5830e7f732abe40893b9a"
+  },
+  "control_source_ids": {
+    "fixed_compressed_dense": "fixed_safe_route",
+    "raw_view_only": "v9_raw_view_only",
+    "relative_view_only": "v9_relative_view_only",
+    "fixed_fallback_pool": "v9_without_querywise_anchor",
+    "no_uncertainty_activation": "v9_without_uncertainty_activation"
+  },
+  "contains_predictions": false,
+  "contains_gold_answers": false,
+  "tasks": [
+    {
+      "comparison_key": "ETHIC/Attributing/official_f1",
+      "task_key": "ETHIC/Attributing",
+      "family": "ETHIC",
+      "task": "Attributing",
+      "scored_units": 333,
+      "qwen_dense_f1": 0.04509816162266568,
+      "qwen_parc_f1": 0.046800188620401605,
+      "qwen_delta": 0.001702026997735924,
+      "llama_dense_f1": 0.05870081485196501,
+      "llama_parc_f1": 0.06095973358710387,
+      "llama_delta": 0.002258918735138858,
+      "parc_compression": 0.5879522017324789,
+      "parc_compressed_units": 333,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.04509816162266568,
+          "mean_chunk_compression": 0.5491569152527007,
+          "compressed_units": 333
+        },
+        "raw_view_only": {
+          "f1": 0.046917727286434535,
+          "mean_chunk_compression": 0.5914961171375482,
+          "compressed_units": 333
+        },
+        "relative_view_only": {
+          "f1": 0.04317130396419301,
+          "mean_chunk_compression": 0.580124387617915,
+          "compressed_units": 333
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.04680018862040161,
+          "mean_chunk_compression": 0.5497586492563905,
+          "compressed_units": 333
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.04577839637594244,
+          "mean_chunk_compression": 0.5503589886176077,
+          "compressed_units": 333
+        }
+      }
+    },
+    {
+      "comparison_key": "HELMET/kilt_hotpotqa/official_f1",
+      "task_key": "HELMET/kilt_hotpotqa",
+      "family": "HELMET",
+      "task": "kilt_hotpotqa",
+      "scored_units": 2961,
+      "qwen_dense_f1": 0.4156742381759514,
+      "qwen_parc_f1": 0.4348571729995238,
+      "qwen_delta": 0.019182934823572417,
+      "llama_dense_f1": 0.37039028833439225,
+      "llama_parc_f1": 0.399631557235438,
+      "llama_delta": 0.029241268901045725,
+      "parc_compression": 0.5827254305977622,
+      "parc_compressed_units": 2961,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4156742381759514,
+          "mean_chunk_compression": 0.5499999999999713,
+          "compressed_units": 2961
+        },
+        "raw_view_only": {
+          "f1": 0.4253681468251671,
+          "mean_chunk_compression": 0.584650455927045,
+          "compressed_units": 2961
+        },
+        "relative_view_only": {
+          "f1": 0.4324493679713891,
+          "mean_chunk_compression": 0.5799898682877296,
+          "compressed_units": 2961
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.4348571729995237,
+          "mean_chunk_compression": 0.5489192840256396,
+          "compressed_units": 2961
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.44381258600841555,
+          "mean_chunk_compression": 0.5472644376899448,
+          "compressed_units": 2961
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_multi_latex/average_f1_round",
+      "task_key": "LongTableBench/32k_multi_latex",
+      "family": "LongTableBench",
+      "task": "32k_multi_latex",
+      "scored_units": 181,
+      "qwen_dense_f1": 0.4424948987094202,
+      "qwen_parc_f1": 0.47653697695039354,
+      "qwen_delta": 0.03404207824097333,
+      "llama_dense_f1": 0.3352223216854619,
+      "llama_parc_f1": 0.3412737595048554,
+      "llama_delta": 0.00605143781939349,
+      "parc_compression": 0.5827003852296467,
+      "parc_compressed_units": 181,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4424948987094203,
+          "mean_chunk_compression": 0.5482218263882657,
+          "compressed_units": 181
+        },
+        "raw_view_only": {
+          "f1": 0.43175904156472317,
+          "mean_chunk_compression": 0.5814292041552822,
+          "compressed_units": 181
+        },
+        "relative_view_only": {
+          "f1": 0.4816137402063544,
+          "mean_chunk_compression": 0.5838200546703034,
+          "compressed_units": 181
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.47653697695039343,
+          "mean_chunk_compression": 0.5471346360151377,
+          "compressed_units": 181
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.5005645254554821,
+          "mean_chunk_compression": 0.5438378365934506,
+          "compressed_units": 181
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_multi_markdown/average_f1_round",
+      "task_key": "LongTableBench/32k_multi_markdown",
+      "family": "LongTableBench",
+      "task": "32k_multi_markdown",
+      "scored_units": 181,
+      "qwen_dense_f1": 0.44300614314331654,
+      "qwen_parc_f1": 0.4460057524965171,
+      "qwen_delta": 0.0029996093532005386,
+      "llama_dense_f1": 0.3203343443177965,
+      "llama_parc_f1": 0.3291157812905681,
+      "llama_delta": 0.008781436972771617,
+      "parc_compression": 0.5821542011656172,
+      "parc_compressed_units": 181,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4430061431433164,
+          "mean_chunk_compression": 0.5482218263882666,
+          "compressed_units": 181
+        },
+        "raw_view_only": {
+          "f1": 0.43767618667930924,
+          "mean_chunk_compression": 0.5814292041552825,
+          "compressed_units": 181
+        },
+        "relative_view_only": {
+          "f1": 0.4538788712821861,
+          "mean_chunk_compression": 0.5832738706062733,
+          "compressed_units": 181
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.44600575249651697,
+          "mean_chunk_compression": 0.5471346360151387,
+          "compressed_units": 181
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4685395022411597,
+          "mean_chunk_compression": 0.5438378365934516,
+          "compressed_units": 181
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_multi_sql/average_f1_round",
+      "task_key": "LongTableBench/32k_multi_sql",
+      "family": "LongTableBench",
+      "task": "32k_multi_sql",
+      "scored_units": 181,
+      "qwen_dense_f1": 0.42690649693317306,
+      "qwen_parc_f1": 0.43146625980930703,
+      "qwen_delta": 0.004559762876133966,
+      "llama_dense_f1": 0.35292984436536023,
+      "llama_parc_f1": 0.38042251743814387,
+      "llama_delta": 0.027492673072783635,
+      "parc_compression": 0.582154201165617,
+      "parc_compressed_units": 181,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.42690649693317295,
+          "mean_chunk_compression": 0.5482218263882653,
+          "compressed_units": 181
+        },
+        "raw_view_only": {
+          "f1": 0.4101666376518773,
+          "mean_chunk_compression": 0.5814292041552823,
+          "compressed_units": 181
+        },
+        "relative_view_only": {
+          "f1": 0.4580350588637882,
+          "mean_chunk_compression": 0.583273870606274,
+          "compressed_units": 181
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.4314662598093069,
+          "mean_chunk_compression": 0.5471346360151373,
+          "compressed_units": 181
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4467035000474954,
+          "mean_chunk_compression": 0.5438378365934503,
+          "compressed_units": 181
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_single_csv/average_f1",
+      "task_key": "LongTableBench/32k_single_csv",
+      "family": "LongTableBench",
+      "task": "32k_single_csv",
+      "scored_units": 166,
+      "qwen_dense_f1": 0.45267737617135206,
+      "qwen_parc_f1": 0.47652992924077264,
+      "qwen_delta": 0.02385255306942058,
+      "llama_dense_f1": 0.19638163041777498,
+      "llama_parc_f1": 0.20046462907908688,
+      "llama_delta": 0.0040829986613118985,
+      "parc_compression": 0.5766680794391403,
+      "parc_compressed_units": 166,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.45267737617135206,
+          "mean_chunk_compression": 0.5457946258648156,
+          "compressed_units": 166
+        },
+        "raw_view_only": {
+          "f1": 0.4604656722126601,
+          "mean_chunk_compression": 0.5741955698373032,
+          "compressed_units": 166
+        },
+        "relative_view_only": {
+          "f1": 0.4714326169145445,
+          "mean_chunk_compression": 0.5720774359766249,
+          "compressed_units": 166
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.47652992924077264,
+          "mean_chunk_compression": 0.5439915291392607,
+          "compressed_units": 166
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4580457360577842,
+          "mean_chunk_compression": 0.542761865782915,
+          "compressed_units": 166
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_single_html/average_f1",
+      "task_key": "LongTableBench/32k_single_html",
+      "family": "LongTableBench",
+      "task": "32k_single_html",
+      "scored_units": 166,
+      "qwen_dense_f1": 0.4371151271753681,
+      "qwen_parc_f1": 0.46989386115892134,
+      "qwen_delta": 0.03277873398355324,
+      "llama_dense_f1": 0.19117422069229298,
+      "llama_parc_f1": 0.2134012239433926,
+      "llama_delta": 0.02222700325109961,
+      "parc_compression": 0.5766464033444045,
+      "parc_compressed_units": 166,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4371151271753681,
+          "mean_chunk_compression": 0.5457946258648156,
+          "compressed_units": 166
+        },
+        "raw_view_only": {
+          "f1": 0.4386750465063718,
+          "mean_chunk_compression": 0.5735799687468096,
+          "compressed_units": 166
+        },
+        "relative_view_only": {
+          "f1": 0.4732405813731115,
+          "mean_chunk_compression": 0.5732905074405629,
+          "compressed_units": 166
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.46989386115892134,
+          "mean_chunk_compression": 0.5439915291392607,
+          "compressed_units": 166
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4738238668961561,
+          "mean_chunk_compression": 0.5427618657829149,
+          "compressed_units": 166
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_single_json/average_f1",
+      "task_key": "LongTableBench/32k_single_json",
+      "family": "LongTableBench",
+      "task": "32k_single_json",
+      "scored_units": 166,
+      "qwen_dense_f1": 0.4302686938229107,
+      "qwen_parc_f1": 0.44556320520175935,
+      "qwen_delta": 0.01529451137884863,
+      "llama_dense_f1": 0.2137702324449312,
+      "llama_parc_f1": 0.21851779412020372,
+      "llama_delta": 0.004747561675272516,
+      "parc_compression": 0.57666807943914,
+      "parc_compressed_units": 166,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4302686938229108,
+          "mean_chunk_compression": 0.5457946258648155,
+          "compressed_units": 166
+        },
+        "raw_view_only": {
+          "f1": 0.44320137693631667,
+          "mean_chunk_compression": 0.574195569837303,
+          "compressed_units": 166
+        },
+        "relative_view_only": {
+          "f1": 0.4244119334480781,
+          "mean_chunk_compression": 0.5720774359766245,
+          "compressed_units": 166
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.44556320520175946,
+          "mean_chunk_compression": 0.5439915291392606,
+          "compressed_units": 166
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.444358385924651,
+          "mean_chunk_compression": 0.5427618657829149,
+          "compressed_units": 166
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_single_latex/average_f1",
+      "task_key": "LongTableBench/32k_single_latex",
+      "family": "LongTableBench",
+      "task": "32k_single_latex",
+      "scored_units": 166,
+      "qwen_dense_f1": 0.46595486173799433,
+      "qwen_parc_f1": 0.4777400979208208,
+      "qwen_delta": 0.011785236182826453,
+      "llama_dense_f1": 0.18893191814878563,
+      "llama_parc_f1": 0.21877075401171786,
+      "llama_delta": 0.029838835862932234,
+      "parc_compression": 0.577262004434898,
+      "parc_compressed_units": 166,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.46595486173799433,
+          "mean_chunk_compression": 0.5457946258648156,
+          "compressed_units": 166
+        },
+        "raw_view_only": {
+          "f1": 0.48203346185273893,
+          "mean_chunk_compression": 0.5741955698373032,
+          "compressed_units": 166
+        },
+        "relative_view_only": {
+          "f1": 0.4798819988579024,
+          "mean_chunk_compression": 0.5720774359766249,
+          "compressed_units": 166
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.4777400979208208,
+          "mean_chunk_compression": 0.543991529139261,
+          "compressed_units": 166
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4772859001774664,
+          "mean_chunk_compression": 0.5427618657829152,
+          "compressed_units": 166
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_single_markdown/average_f1",
+      "task_key": "LongTableBench/32k_single_markdown",
+      "family": "LongTableBench",
+      "task": "32k_single_markdown",
+      "scored_units": 166,
+      "qwen_dense_f1": 0.4523173279197376,
+      "qwen_parc_f1": 0.472035762096003,
+      "qwen_delta": 0.019718434176265398,
+      "llama_dense_f1": 0.2033515012430675,
+      "llama_parc_f1": 0.23255924129418107,
+      "llama_delta": 0.029207740051113568,
+      "parc_compression": 0.5760469907687287,
+      "parc_compressed_units": 166,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4523173279197376,
+          "mean_chunk_compression": 0.5457946258648158,
+          "compressed_units": 166
+        },
+        "raw_view_only": {
+          "f1": 0.4564735131000192,
+          "mean_chunk_compression": 0.5735799687468098,
+          "compressed_units": 166
+        },
+        "relative_view_only": {
+          "f1": 0.4793213145622785,
+          "mean_chunk_compression": 0.5720774359766247,
+          "compressed_units": 166
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.472035762096003,
+          "mean_chunk_compression": 0.5439915291392609,
+          "compressed_units": 166
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.47418170851905805,
+          "mean_chunk_compression": 0.542761865782915,
+          "compressed_units": 166
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_single_sql/average_f1",
+      "task_key": "LongTableBench/32k_single_sql",
+      "family": "LongTableBench",
+      "task": "32k_single_sql",
+      "scored_units": 166,
+      "qwen_dense_f1": 0.44665732527178303,
+      "qwen_parc_f1": 0.47057203171661005,
+      "qwen_delta": 0.023914706444827016,
+      "llama_dense_f1": 0.19886733079504162,
+      "llama_parc_f1": 0.2217536813922356,
+      "llama_delta": 0.02288635059719399,
+      "parc_compression": 0.5760469907687283,
+      "parc_compressed_units": 166,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.44665732527178315,
+          "mean_chunk_compression": 0.5457946258648155,
+          "compressed_units": 166
+        },
+        "raw_view_only": {
+          "f1": 0.4577875604984038,
+          "mean_chunk_compression": 0.5735799687468095,
+          "compressed_units": 166
+        },
+        "relative_view_only": {
+          "f1": 0.4762375509363461,
+          "mean_chunk_compression": 0.5720774359766247,
+          "compressed_units": 166
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.47057203171661,
+          "mean_chunk_compression": 0.5439915291392606,
+          "compressed_units": 166
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.47042860085028765,
+          "mean_chunk_compression": 0.5427618657829149,
+          "compressed_units": 166
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/32k_single_xml/average_f1",
+      "task_key": "LongTableBench/32k_single_xml",
+      "family": "LongTableBench",
+      "task": "32k_single_xml",
+      "scored_units": 166,
+      "qwen_dense_f1": 0.43494454006502203,
+      "qwen_parc_f1": 0.46773283610633015,
+      "qwen_delta": 0.03278829604130812,
+      "llama_dense_f1": 0.1812179453745719,
+      "llama_parc_f1": 0.2098884716354596,
+      "llama_delta": 0.028670526260887702,
+      "parc_compression": 0.5766464033444045,
+      "parc_compressed_units": 166,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4349445400650219,
+          "mean_chunk_compression": 0.5457946258648159,
+          "compressed_units": 166
+        },
+        "raw_view_only": {
+          "f1": 0.4378718336549661,
+          "mean_chunk_compression": 0.5735799687468098,
+          "compressed_units": 166
+        },
+        "relative_view_only": {
+          "f1": 0.4681535666475425,
+          "mean_chunk_compression": 0.573290507440563,
+          "compressed_units": 166
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.4677328361063301,
+          "mean_chunk_compression": 0.543991529139261,
+          "compressed_units": 166
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.46681487856186643,
+          "mean_chunk_compression": 0.5427618657829152,
+          "compressed_units": 166
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_multi_html/average_f1_round",
+      "task_key": "LongTableBench/8k_multi_html",
+      "family": "LongTableBench",
+      "task": "8k_multi_html",
+      "scored_units": 865,
+      "qwen_dense_f1": 0.5161335028453897,
+      "qwen_parc_f1": 0.5205975103989876,
+      "qwen_delta": 0.004464007553597882,
+      "llama_dense_f1": 0.45642894661446176,
+      "llama_parc_f1": 0.47881258214519085,
+      "llama_delta": 0.022383635530729085,
+      "parc_compression": 0.5469245730213809,
+      "parc_compressed_units": 865,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.5203916916700527,
+          "mean_chunk_compression": 0.5123526620661728,
+          "compressed_units": 865
+        },
+        "raw_view_only": {
+          "f1": 0.5200675418403167,
+          "mean_chunk_compression": 0.5458166121768684,
+          "compressed_units": 865
+        },
+        "relative_view_only": {
+          "f1": 0.52662040391363,
+          "mean_chunk_compression": 0.5445086773584347,
+          "compressed_units": 865
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.520597510398988,
+          "mean_chunk_compression": 0.5120456784690143,
+          "compressed_units": 865
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.526005900319648,
+          "mean_chunk_compression": 0.5119322874110506,
+          "compressed_units": 865
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_multi_json/average_f1_round",
+      "task_key": "LongTableBench/8k_multi_json",
+      "family": "LongTableBench",
+      "task": "8k_multi_json",
+      "scored_units": 865,
+      "qwen_dense_f1": 0.5391190367314407,
+      "qwen_parc_f1": 0.5481014502905289,
+      "qwen_delta": 0.008982413559088243,
+      "llama_dense_f1": 0.4355694453504881,
+      "llama_parc_f1": 0.4459295084620407,
+      "llama_delta": 0.010360063111552631,
+      "parc_compression": 0.5469245730213804,
+      "parc_compressed_units": 865,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.5399695734779318,
+          "mean_chunk_compression": 0.5123526620661725,
+          "compressed_units": 865
+        },
+        "raw_view_only": {
+          "f1": 0.5434207199544391,
+          "mean_chunk_compression": 0.545816612176868,
+          "compressed_units": 865
+        },
+        "relative_view_only": {
+          "f1": 0.5509268602181449,
+          "mean_chunk_compression": 0.5442718437039707,
+          "compressed_units": 865
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.5481014502905296,
+          "mean_chunk_compression": 0.5120456784690138,
+          "compressed_units": 865
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.5497158178128762,
+          "mean_chunk_compression": 0.5119322874110501,
+          "compressed_units": 865
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_multi_latex/average_f1_round",
+      "task_key": "LongTableBench/8k_multi_latex",
+      "family": "LongTableBench",
+      "task": "8k_multi_latex",
+      "scored_units": 865,
+      "qwen_dense_f1": 0.5173762492938484,
+      "qwen_parc_f1": 0.5234203527413592,
+      "qwen_delta": 0.006044103447510829,
+      "llama_dense_f1": 0.440282369940745,
+      "llama_parc_f1": 0.45044157152069497,
+      "llama_delta": 0.010159201579949984,
+      "parc_compression": 0.5470370324915077,
+      "parc_compressed_units": 865,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.5131621012068684,
+          "mean_chunk_compression": 0.5123526620661726,
+          "compressed_units": 865
+        },
+        "raw_view_only": {
+          "f1": 0.5301623030153011,
+          "mean_chunk_compression": 0.5458166121768686,
+          "compressed_units": 865
+        },
+        "relative_view_only": {
+          "f1": 0.5233666628815106,
+          "mean_chunk_compression": 0.5442846889191286,
+          "compressed_units": 865
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.5234203527413596,
+          "mean_chunk_compression": 0.5120456784690139,
+          "compressed_units": 865
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.5387600749092128,
+          "mean_chunk_compression": 0.5120545639784135,
+          "compressed_units": 865
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_multi_markdown/average_f1_round",
+      "task_key": "LongTableBench/8k_multi_markdown",
+      "family": "LongTableBench",
+      "task": "8k_multi_markdown",
+      "scored_units": 865,
+      "qwen_dense_f1": 0.5234399318427401,
+      "qwen_parc_f1": 0.5287100331391661,
+      "qwen_delta": 0.005270101296426022,
+      "llama_dense_f1": 0.4399855437963414,
+      "llama_parc_f1": 0.44935067667186745,
+      "llama_delta": 0.009365132875526039,
+      "parc_compression": 0.5468089660849648,
+      "parc_compressed_units": 865,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.5244666315399604,
+          "mean_chunk_compression": 0.5123526620661732,
+          "compressed_units": 865
+        },
+        "raw_view_only": {
+          "f1": 0.5304913027774869,
+          "mean_chunk_compression": 0.5458166121768684,
+          "compressed_units": 865
+        },
+        "relative_view_only": {
+          "f1": 0.5305149522258437,
+          "mean_chunk_compression": 0.5442646182704453,
+          "compressed_units": 865
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.5287100331391665,
+          "mean_chunk_compression": 0.5120456784690146,
+          "compressed_units": 865
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.5385339211210234,
+          "mean_chunk_compression": 0.511932287411051,
+          "compressed_units": 865
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_single_csv/average_f1",
+      "task_key": "LongTableBench/8k_single_csv",
+      "family": "LongTableBench",
+      "task": "8k_single_csv",
+      "scored_units": 269,
+      "qwen_dense_f1": 0.49532446075197,
+      "qwen_parc_f1": 0.4957935703288863,
+      "qwen_delta": 0.0004691095769163156,
+      "llama_dense_f1": 0.2354429337700713,
+      "llama_parc_f1": 0.24419052653253395,
+      "llama_delta": 0.008747592762462647,
+      "parc_compression": 0.5226629768347826,
+      "parc_compressed_units": 269,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4913591571584138,
+          "mean_chunk_compression": 0.49619916688487375,
+          "compressed_units": 269
+        },
+        "raw_view_only": {
+          "f1": 0.4873410150361824,
+          "mean_chunk_compression": 0.5232437391085987,
+          "compressed_units": 269
+        },
+        "relative_view_only": {
+          "f1": 0.497516589152277,
+          "mean_chunk_compression": 0.5217471894385957,
+          "compressed_units": 269
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.49579357032888643,
+          "mean_chunk_compression": 0.4945816157603102,
+          "compressed_units": 269
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.5048745554321765,
+          "mean_chunk_compression": 0.4946175467911946,
+          "compressed_units": 269
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_single_html/average_f1",
+      "task_key": "LongTableBench/8k_single_html",
+      "family": "LongTableBench",
+      "task": "8k_single_html",
+      "scored_units": 269,
+      "qwen_dense_f1": 0.5091851353933138,
+      "qwen_parc_f1": 0.5153427530750951,
+      "qwen_delta": 0.006157617681781358,
+      "llama_dense_f1": 0.22018217222678188,
+      "llama_parc_f1": 0.2262328542997688,
+      "llama_delta": 0.006050682072986924,
+      "parc_compression": 0.5230347240466786,
+      "parc_compressed_units": 269,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.5178415347560332,
+          "mean_chunk_compression": 0.496199166884874,
+          "compressed_units": 269
+        },
+        "raw_view_only": {
+          "f1": 0.509861225102861,
+          "mean_chunk_compression": 0.523243739108599,
+          "compressed_units": 269
+        },
+        "relative_view_only": {
+          "f1": 0.5141301490743873,
+          "mean_chunk_compression": 0.5224833947013702,
+          "compressed_units": 269
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.5153427530750953,
+          "mean_chunk_compression": 0.4949533629722064,
+          "compressed_units": 269
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.5132895605014566,
+          "mean_chunk_compression": 0.49498929400309066,
+          "compressed_units": 269
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_single_json/average_f1",
+      "task_key": "LongTableBench/8k_single_json",
+      "family": "LongTableBench",
+      "task": "8k_single_json",
+      "scored_units": 269,
+      "qwen_dense_f1": 0.5311741954864632,
+      "qwen_parc_f1": 0.541241410386392,
+      "qwen_delta": 0.01006721489992879,
+      "llama_dense_f1": 0.24462978161862922,
+      "llama_parc_f1": 0.2695212882945225,
+      "llama_delta": 0.024891506675893266,
+      "parc_compression": 0.5226629768347822,
+      "parc_compressed_units": 269,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.5320416056475537,
+          "mean_chunk_compression": 0.49619916688487364,
+          "compressed_units": 269
+        },
+        "raw_view_only": {
+          "f1": 0.5313549729906609,
+          "mean_chunk_compression": 0.5232437391085986,
+          "compressed_units": 269
+        },
+        "relative_view_only": {
+          "f1": 0.5426838753976303,
+          "mean_chunk_compression": 0.5217471894385953,
+          "compressed_units": 269
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.541241410386392,
+          "mean_chunk_compression": 0.49458161576031007,
+          "compressed_units": 269
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.5361439675566071,
+          "mean_chunk_compression": 0.49461754679119446,
+          "compressed_units": 269
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_single_latex/average_f1",
+      "task_key": "LongTableBench/8k_single_latex",
+      "family": "LongTableBench",
+      "task": "8k_single_latex",
+      "scored_units": 269,
+      "qwen_dense_f1": 0.5239109094127682,
+      "qwen_parc_f1": 0.5392973816765638,
+      "qwen_delta": 0.015386472263795636,
+      "llama_dense_f1": 0.24361914417676495,
+      "llama_parc_f1": 0.2633305975313411,
+      "llama_delta": 0.019711453354576136,
+      "parc_compression": 0.5230347240466787,
+      "parc_compressed_units": 269,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.5252562802748677,
+          "mean_chunk_compression": 0.4961991668848743,
+          "compressed_units": 269
+        },
+        "raw_view_only": {
+          "f1": 0.5257637447228527,
+          "mean_chunk_compression": 0.5240327157131224,
+          "compressed_units": 269
+        },
+        "relative_view_only": {
+          "f1": 0.5282388408782461,
+          "mean_chunk_compression": 0.5228551419132662,
+          "compressed_units": 269
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.5392973816765639,
+          "mean_chunk_compression": 0.4949533629722066,
+          "compressed_units": 269
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.5416372970276317,
+          "mean_chunk_compression": 0.4949892940030909,
+          "compressed_units": 269
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_single_markdown/average_f1",
+      "task_key": "LongTableBench/8k_single_markdown",
+      "family": "LongTableBench",
+      "task": "8k_single_markdown",
+      "scored_units": 269,
+      "qwen_dense_f1": 0.4934057268629759,
+      "qwen_parc_f1": 0.5098043633359618,
+      "qwen_delta": 0.016398636472985895,
+      "llama_dense_f1": 0.24568977078270757,
+      "llama_parc_f1": 0.25410397120434297,
+      "llama_delta": 0.008414200421635404,
+      "parc_compression": 0.5226629768347825,
+      "parc_compressed_units": 269,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.49437935051317977,
+          "mean_chunk_compression": 0.49619916688487387,
+          "compressed_units": 269
+        },
+        "raw_view_only": {
+          "f1": 0.5026269063443787,
+          "mean_chunk_compression": 0.5232437391085986,
+          "compressed_units": 269
+        },
+        "relative_view_only": {
+          "f1": 0.5060724075593966,
+          "mean_chunk_compression": 0.5224833947013697,
+          "compressed_units": 269
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.509804363335962,
+          "mean_chunk_compression": 0.49458161576031007,
+          "compressed_units": 269
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.5183727878895167,
+          "mean_chunk_compression": 0.4946175467911946,
+          "compressed_units": 269
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/8k_single_sql/average_f1",
+      "task_key": "LongTableBench/8k_single_sql",
+      "family": "LongTableBench",
+      "task": "8k_single_sql",
+      "scored_units": 269,
+      "qwen_dense_f1": 0.4615652831266214,
+      "qwen_parc_f1": 0.46216546774167594,
+      "qwen_delta": 0.0006001846150545664,
+      "llama_dense_f1": 0.22705279024981626,
+      "llama_parc_f1": 0.2313128630972497,
+      "llama_delta": 0.004260072847433433,
+      "parc_compression": 0.5226629768347822,
+      "parc_compressed_units": 269,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.45322752423124185,
+          "mean_chunk_compression": 0.49619916688487353,
+          "compressed_units": 269
+        },
+        "raw_view_only": {
+          "f1": 0.4635663592912664,
+          "mean_chunk_compression": 0.5232437391085984,
+          "compressed_units": 269
+        },
+        "relative_view_only": {
+          "f1": 0.46136806192568286,
+          "mean_chunk_compression": 0.5224833947013696,
+          "compressed_units": 269
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.462165467741676,
+          "mean_chunk_compression": 0.49458161576030996,
+          "compressed_units": 269
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.47459888314906923,
+          "mean_chunk_compression": 0.49461754679119435,
+          "compressed_units": 269
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_multi_csv/average_f1_round",
+      "task_key": "LongTableBench/inf_multi_csv",
+      "family": "LongTableBench",
+      "task": "inf_multi_csv",
+      "scored_units": 184,
+      "qwen_dense_f1": 0.33916712660153436,
+      "qwen_parc_f1": 0.3599307832347562,
+      "qwen_delta": 0.020763656633221828,
+      "llama_dense_f1": 0.2994621279104038,
+      "llama_parc_f1": 0.3325026142023893,
+      "llama_delta": 0.03304048629198553,
+      "parc_compression": 0.5897360233881717,
+      "parc_compressed_units": 184,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.3391671266015343,
+          "mean_chunk_compression": 0.5482189104934776,
+          "compressed_units": 184
+        },
+        "raw_view_only": {
+          "f1": 0.3418120963660693,
+          "mean_chunk_compression": 0.5881258042602684,
+          "compressed_units": 184
+        },
+        "relative_view_only": {
+          "f1": 0.3768131158779584,
+          "mean_chunk_compression": 0.5848290193222063,
+          "compressed_units": 184
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.35993078323475614,
+          "mean_chunk_compression": 0.5476967916402404,
+          "compressed_units": 184
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.3816420429894942,
+          "mean_chunk_compression": 0.5455310547767701,
+          "compressed_units": 184
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_multi_html/average_f1_round",
+      "task_key": "LongTableBench/inf_multi_html",
+      "family": "LongTableBench",
+      "task": "inf_multi_html",
+      "scored_units": 184,
+      "qwen_dense_f1": 0.37346233019021624,
+      "qwen_parc_f1": 0.3931555334372947,
+      "qwen_delta": 0.01969320324707846,
+      "llama_dense_f1": 0.3355667778831197,
+      "llama_parc_f1": 0.3517803286169103,
+      "llama_delta": 0.01621355073379055,
+      "parc_compression": 0.5897360233881711,
+      "parc_compressed_units": 184,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.37346233019021624,
+          "mean_chunk_compression": 0.5482189104934772,
+          "compressed_units": 184
+        },
+        "raw_view_only": {
+          "f1": 0.38674237743765477,
+          "mean_chunk_compression": 0.588125804260268,
+          "compressed_units": 184
+        },
+        "relative_view_only": {
+          "f1": 0.4072902815394341,
+          "mean_chunk_compression": 0.5853747715506941,
+          "compressed_units": 184
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.39315553343729465,
+          "mean_chunk_compression": 0.54769679164024,
+          "compressed_units": 184
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4105329024450985,
+          "mean_chunk_compression": 0.5455310547767697,
+          "compressed_units": 184
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_multi_json/average_f1_round",
+      "task_key": "LongTableBench/inf_multi_json",
+      "family": "LongTableBench",
+      "task": "inf_multi_json",
+      "scored_units": 184,
+      "qwen_dense_f1": 0.3934368228389967,
+      "qwen_parc_f1": 0.40702311577311573,
+      "qwen_delta": 0.013586292934119004,
+      "llama_dense_f1": 0.3158514149518647,
+      "llama_parc_f1": 0.3340319778851269,
+      "llama_delta": 0.0181805629332622,
+      "parc_compression": 0.5897360233881713,
+      "parc_compressed_units": 184,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.3934368228389968,
+          "mean_chunk_compression": 0.5482189104934772,
+          "compressed_units": 184
+        },
+        "raw_view_only": {
+          "f1": 0.40501742219133513,
+          "mean_chunk_compression": 0.588125804260268,
+          "compressed_units": 184
+        },
+        "relative_view_only": {
+          "f1": 0.40167459955503426,
+          "mean_chunk_compression": 0.584829019322206,
+          "compressed_units": 184
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.4070231157731158,
+          "mean_chunk_compression": 0.5476967916402401,
+          "compressed_units": 184
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.43644622285926643,
+          "mean_chunk_compression": 0.5455310547767698,
+          "compressed_units": 184
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_multi_latex/average_f1_round",
+      "task_key": "LongTableBench/inf_multi_latex",
+      "family": "LongTableBench",
+      "task": "inf_multi_latex",
+      "scored_units": 184,
+      "qwen_dense_f1": 0.36045508381340463,
+      "qwen_parc_f1": 0.38612164613663863,
+      "qwen_delta": 0.025666562323234,
+      "llama_dense_f1": 0.28449488077473245,
+      "llama_parc_f1": 0.3216632368070435,
+      "llama_delta": 0.037168356032311056,
+      "parc_compression": 0.5897360233881712,
+      "parc_compressed_units": 184,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.3604550838134046,
+          "mean_chunk_compression": 0.5482189104934775,
+          "compressed_units": 184
+        },
+        "raw_view_only": {
+          "f1": 0.3617139095287521,
+          "mean_chunk_compression": 0.588125804260268,
+          "compressed_units": 184
+        },
+        "relative_view_only": {
+          "f1": 0.3942738200496822,
+          "mean_chunk_compression": 0.5848312932898245,
+          "compressed_units": 184
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.38612164613663863,
+          "mean_chunk_compression": 0.5476967916402404,
+          "compressed_units": 184
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4008941019417032,
+          "mean_chunk_compression": 0.54553105477677,
+          "compressed_units": 184
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_multi_markdown/average_f1_round",
+      "task_key": "LongTableBench/inf_multi_markdown",
+      "family": "LongTableBench",
+      "task": "inf_multi_markdown",
+      "scored_units": 184,
+      "qwen_dense_f1": 0.37635683303037126,
+      "qwen_parc_f1": 0.39591253543144533,
+      "qwen_delta": 0.01955570240107407,
+      "llama_dense_f1": 0.3402600146335815,
+      "llama_parc_f1": 0.3637764074528229,
+      "llama_delta": 0.023516392819241394,
+      "parc_compression": 0.5897360233881714,
+      "parc_compressed_units": 184,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.3763568330303712,
+          "mean_chunk_compression": 0.5482189104934776,
+          "compressed_units": 184
+        },
+        "raw_view_only": {
+          "f1": 0.3737536692859031,
+          "mean_chunk_compression": 0.5881258042602683,
+          "compressed_units": 184
+        },
+        "relative_view_only": {
+          "f1": 0.40240408132516514,
+          "mean_chunk_compression": 0.5853747715506943,
+          "compressed_units": 184
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.39591253543144533,
+          "mean_chunk_compression": 0.5476967916402404,
+          "compressed_units": 184
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4090062110794688,
+          "mean_chunk_compression": 0.5455310547767701,
+          "compressed_units": 184
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_multi_sql/average_f1_round",
+      "task_key": "LongTableBench/inf_multi_sql",
+      "family": "LongTableBench",
+      "task": "inf_multi_sql",
+      "scored_units": 184,
+      "qwen_dense_f1": 0.40422492851559566,
+      "qwen_parc_f1": 0.4224823333871129,
+      "qwen_delta": 0.018257404871517224,
+      "llama_dense_f1": 0.3492684206514792,
+      "llama_parc_f1": 0.39286789232441405,
+      "llama_delta": 0.043599471672934875,
+      "parc_compression": 0.5897360233881713,
+      "parc_compressed_units": 184,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4042249285155957,
+          "mean_chunk_compression": 0.5482189104934772,
+          "compressed_units": 184
+        },
+        "raw_view_only": {
+          "f1": 0.41778338093274386,
+          "mean_chunk_compression": 0.588125804260268,
+          "compressed_units": 184
+        },
+        "relative_view_only": {
+          "f1": 0.4187685652711709,
+          "mean_chunk_compression": 0.5853747715506943,
+          "compressed_units": 184
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.42248233338711294,
+          "mean_chunk_compression": 0.5476967916402401,
+          "compressed_units": 184
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4468593905087353,
+          "mean_chunk_compression": 0.5455310547767698,
+          "compressed_units": 184
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_multi_xml/average_f1_round",
+      "task_key": "LongTableBench/inf_multi_xml",
+      "family": "LongTableBench",
+      "task": "inf_multi_xml",
+      "scored_units": 184,
+      "qwen_dense_f1": 0.4256742336249458,
+      "qwen_parc_f1": 0.4306236183051172,
+      "qwen_delta": 0.00494938468017142,
+      "llama_dense_f1": 0.31152516430346266,
+      "llama_parc_f1": 0.3560297778391856,
+      "llama_delta": 0.04450461353572294,
+      "parc_compression": 0.589736023388171,
+      "parc_compressed_units": 184,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.4256742336249459,
+          "mean_chunk_compression": 0.548218910493477,
+          "compressed_units": 184
+        },
+        "raw_view_only": {
+          "f1": 0.41085810168924863,
+          "mean_chunk_compression": 0.5881258042602676,
+          "compressed_units": 184
+        },
+        "relative_view_only": {
+          "f1": 0.42843245198351615,
+          "mean_chunk_compression": 0.5853747715506938,
+          "compressed_units": 184
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.43062361830511725,
+          "mean_chunk_compression": 0.5476967916402399,
+          "compressed_units": 184
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.4255300153369869,
+          "mean_chunk_compression": 0.5455310547767696,
+          "compressed_units": 184
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_single_csv/average_f1",
+      "task_key": "LongTableBench/inf_single_csv",
+      "family": "LongTableBench",
+      "task": "inf_single_csv",
+      "scored_units": 106,
+      "qwen_dense_f1": 0.39627270004628495,
+      "qwen_parc_f1": 0.4046046720575023,
+      "qwen_delta": 0.008331972011217326,
+      "llama_dense_f1": 0.1816786463012878,
+      "llama_parc_f1": 0.2034869742416912,
+      "llama_delta": 0.02180832794040341,
+      "parc_compression": 0.5765057198935525,
+      "parc_compressed_units": 106,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.396272700046285,
+          "mean_chunk_compression": 0.549215832810384,
+          "compressed_units": 106
+        },
+        "raw_view_only": {
+          "f1": 0.3920035938903863,
+          "mean_chunk_compression": 0.5821772974103326,
+          "compressed_units": 106
+        },
+        "relative_view_only": {
+          "f1": 0.3810197663971248,
+          "mean_chunk_compression": 0.5774564123958558,
+          "compressed_units": 106
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.40460467205750217,
+          "mean_chunk_compression": 0.5482771513539063,
+          "compressed_units": 106
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.3715858041329739,
+          "mean_chunk_compression": 0.5454682575082073,
+          "compressed_units": 106
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_single_json/average_f1",
+      "task_key": "LongTableBench/inf_single_json",
+      "family": "LongTableBench",
+      "task": "inf_single_json",
+      "scored_units": 106,
+      "qwen_dense_f1": 0.3604522312069482,
+      "qwen_parc_f1": 0.3859845081543195,
+      "qwen_delta": 0.025532276947371313,
+      "llama_dense_f1": 0.1776355196166517,
+      "llama_parc_f1": 0.19294767077785946,
+      "llama_delta": 0.015312151161207765,
+      "parc_compression": 0.5765057198935527,
+      "parc_compressed_units": 106,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.36045223120694814,
+          "mean_chunk_compression": 0.5492158328103842,
+          "compressed_units": 106
+        },
+        "raw_view_only": {
+          "f1": 0.35675351901766994,
+          "mean_chunk_compression": 0.5821772974103328,
+          "compressed_units": 106
+        },
+        "relative_view_only": {
+          "f1": 0.3630809442130197,
+          "mean_chunk_compression": 0.5774564123958559,
+          "compressed_units": 106
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.38598450815431945,
+          "mean_chunk_compression": 0.5482771513539065,
+          "compressed_units": 106
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.3790662691606088,
+          "mean_chunk_compression": 0.5454682575082073,
+          "compressed_units": 106
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_single_latex/average_f1",
+      "task_key": "LongTableBench/inf_single_latex",
+      "family": "LongTableBench",
+      "task": "inf_single_latex",
+      "scored_units": 106,
+      "qwen_dense_f1": 0.39354366807197,
+      "qwen_parc_f1": 0.39396525905959867,
+      "qwen_delta": 0.00042159098762867275,
+      "llama_dense_f1": 0.1697214734950584,
+      "llama_parc_f1": 0.19417626398758475,
+      "llama_delta": 0.024454790492526357,
+      "parc_compression": 0.5765057198935527,
+      "parc_compressed_units": 106,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.39354366807196994,
+          "mean_chunk_compression": 0.5492158328103841,
+          "compressed_units": 106
+        },
+        "raw_view_only": {
+          "f1": 0.3756513926325246,
+          "mean_chunk_compression": 0.5812347427505782,
+          "compressed_units": 106
+        },
+        "relative_view_only": {
+          "f1": 0.37004342617550157,
+          "mean_chunk_compression": 0.5774564123958558,
+          "compressed_units": 106
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.3939652590595986,
+          "mean_chunk_compression": 0.5482771513539064,
+          "compressed_units": 106
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.36566337226714585,
+          "mean_chunk_compression": 0.5454682575082073,
+          "compressed_units": 106
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_single_markdown/average_f1",
+      "task_key": "LongTableBench/inf_single_markdown",
+      "family": "LongTableBench",
+      "task": "inf_single_markdown",
+      "scored_units": 106,
+      "qwen_dense_f1": 0.3856094639113507,
+      "qwen_parc_f1": 0.38969002695417787,
+      "qwen_delta": 0.004080563042827168,
+      "llama_dense_f1": 0.15552560646900268,
+      "llama_parc_f1": 0.1667272455008304,
+      "llama_delta": 0.01120163903182772,
+      "parc_compression": 0.5765057198935525,
+      "parc_compressed_units": 106,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.3856094639113507,
+          "mean_chunk_compression": 0.5492158328103841,
+          "compressed_units": 106
+        },
+        "raw_view_only": {
+          "f1": 0.3835579514824798,
+          "mean_chunk_compression": 0.5821772974103325,
+          "compressed_units": 106
+        },
+        "relative_view_only": {
+          "f1": 0.3714285714285714,
+          "mean_chunk_compression": 0.5784176085510713,
+          "compressed_units": 106
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.38969002695417787,
+          "mean_chunk_compression": 0.5482771513539064,
+          "compressed_units": 106
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.37176549865229114,
+          "mean_chunk_compression": 0.545468257508207,
+          "compressed_units": 106
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_single_sql/average_f1",
+      "task_key": "LongTableBench/inf_single_sql",
+      "family": "LongTableBench",
+      "task": "inf_single_sql",
+      "scored_units": 106,
+      "qwen_dense_f1": 0.3769818232082383,
+      "qwen_parc_f1": 0.39627133872416886,
+      "qwen_delta": 0.019289515515930555,
+      "llama_dense_f1": 0.16555855046421084,
+      "llama_parc_f1": 0.19880407852105966,
+      "llama_delta": 0.03324552805684883,
+      "parc_compression": 0.5765057198935527,
+      "parc_compressed_units": 106,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.3769818232082383,
+          "mean_chunk_compression": 0.5492158328103841,
+          "compressed_units": 106
+        },
+        "raw_view_only": {
+          "f1": 0.3721922731356693,
+          "mean_chunk_compression": 0.5821772974103326,
+          "compressed_units": 106
+        },
+        "relative_view_only": {
+          "f1": 0.3799191374663073,
+          "mean_chunk_compression": 0.5784176085510713,
+          "compressed_units": 106
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.3962713387241689,
+          "mean_chunk_compression": 0.5482771513539063,
+          "compressed_units": 106
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.3610512129380054,
+          "mean_chunk_compression": 0.5454682575082072,
+          "compressed_units": 106
+        }
+      }
+    },
+    {
+      "comparison_key": "LongTableBench/inf_single_xml/average_f1",
+      "task_key": "LongTableBench/inf_single_xml",
+      "family": "LongTableBench",
+      "task": "inf_single_xml",
+      "scored_units": 106,
+      "qwen_dense_f1": 0.367864630128781,
+      "qwen_parc_f1": 0.3711665169212339,
+      "qwen_delta": 0.0033018867924529127,
+      "llama_dense_f1": 0.17250673854447438,
+      "llama_parc_f1": 0.18473413379073755,
+      "llama_delta": 0.012227395246263179,
+      "parc_compression": 0.5765057198935528,
+      "parc_compressed_units": 106,
+      "qwen_controls": {
+        "fixed_compressed_dense": {
+          "f1": 0.36786463012878107,
+          "mean_chunk_compression": 0.5492158328103843,
+          "compressed_units": 106
+        },
+        "raw_view_only": {
+          "f1": 0.365214135968853,
+          "mean_chunk_compression": 0.5821772974103328,
+          "compressed_units": 106
+        },
+        "relative_view_only": {
+          "f1": 0.3601302785265049,
+          "mean_chunk_compression": 0.5774564123958559,
+          "compressed_units": 106
+        },
+        "fixed_fallback_pool": {
+          "f1": 0.3711665169212339,
+          "mean_chunk_compression": 0.5482771513539065,
+          "compressed_units": 106
+        },
+        "no_uncertainty_activation": {
+          "f1": 0.3669436957172805,
+          "mean_chunk_compression": 0.5454682575082073,
+          "compressed_units": 106
+        }
+      }
+    }
+  ]
+}

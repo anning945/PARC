@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.joblib binary
+# Preserve the byte-level provenance of the released CSV summaries.
+*.csv -text

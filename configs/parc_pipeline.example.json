@@ -1,0 +1,23 @@
+{
+  "data": {
+    "bamboo_root": "/path/to/BAMBOO",
+    "ethic_root": "/path/to/ETHIC",
+    "helmet_root": "/path/to/HELMET/data/kilt",
+    "longtable_root": "/path/to/LongTableBench"
+  },
+  "official_repositories_root": "/path/to/pinned/benchmark-repositories",
+  "models": {
+    "embedder": "BAAI/bge-m3",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "generator": "Qwen/Qwen2.5-7B-Instruct",
+    "embedder_revision": null,
+    "reranker_revision": null,
+    "generator_revision": null
+  },
+  "runtime": {
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "cache_dir": "cache/parc_pipeline",
+    "output_dir": "outputs/parc_pipeline"
+  }
+}

@@ -1,0 +1,1214 @@
+{
+  "method": "PARC",
+  "scope": "frozen_development_selection_metadata",
+  "grid": [
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 0.5,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 1.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 0.5,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 1.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": -0.25
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.0
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.02,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.4,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    },
+    {
+      "maximum_negative_probability": 0.5,
+      "minimum_positive_probability": 0.2,
+      "negative_penalty": 2.0,
+      "regression_weight": 2.0,
+      "route_margin": 0.05,
+      "score_threshold": 0.2
+    }
+  ],
+  "selected_policy_index_zero_based": 116,
+  "selected_policy": {
+    "maximum_negative_probability": 0.4,
+    "minimum_positive_probability": 0.2,
+    "negative_penalty": 0.5,
+    "regression_weight": 2.0,
+    "route_margin": 0.02,
+    "score_threshold": 0.2
+  },
+  "development_thresholds": {
+    "minimum_query_weighted_compression": 0.55,
+    "minimum_task_mean_compression": 0.55,
+    "maximum_task_macro_activation": 0.7,
+    "maximum_single_task_activation": 0.9,
+    "minimum_task_delta_f1_pp": -1.5,
+    "maximum_active_negative_rate": 0.2,
+    "minimum_active_positive_precision": 0.12,
+    "query_delta_clip_fraction": 0.05
+  },
+  "feasibility": [
+    "all_queries_strictly_compressed",
+    "minimum_query_weighted_compression",
+    "minimum_task_mean_compression",
+    "maximum_task_macro_activation",
+    "maximum_single_task_activation"
+  ],
+  "risk_feasibility": [
+    "minimum_task_delta_f1_pp",
+    "maximum_active_negative_rate",
+    "minimum_active_positive_precision"
+  ],
+  "objective_order_maximize": [
+    "feasibility_indicator",
+    "risk_feasibility_indicator",
+    "family_win_fraction",
+    "minimum_family_delta_f1_pp",
+    "task_win_fraction",
+    "minimum_task_delta_f1_pp",
+    "negative_task_loss_count",
+    "active_positive_precision",
+    "negative_active_negative_rate",
+    "clipped_query_weighted_delta_f1_pp",
+    "task_macro_delta_f1_pp",
+    "query_weighted_delta_f1_pp",
+    "query_weighted_compression"
+  ],
+  "cross_validation_aggregation": "Concatenate componentwise minima of LOTO and LOFO objectives, then their componentwise means; maximize the resulting tuple lexicographically.",
+  "exact_tie_rule": "Keep the first policy in the frozen grid order.",
+  "per_query_minimum_active_compression": 0.4,
+  "view_weights": {
+    "raw": 0.5,
+    "raw_plus_relative": 0.5
+  },
+  "frozen_model_manifest_sha256": "68e0d10638799b5358b417f868c095f58e62383a6974510648861ede12dd1015",
+  "details": "docs/selection_protocol.md",
+  "boundary": "Records the released selector's development-selection protocol; independent reproduction uses the training and evaluation pipelines."
+}

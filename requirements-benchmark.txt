@@ -1,0 +1,5 @@
+# Install the runtime lock first, then these dependencies for the public
+# four-family schema and prompt reconstruction workflow.
+-r requirements-lock.txt
+pandas==2.2.3
+langchain-text-splitters==0.3.11

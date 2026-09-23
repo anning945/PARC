@@ -1,0 +1,62 @@
+name: Release checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHON: ${{ github.workspace }}/.venv/bin/python
+      PYTHONHASHSEED: "0"
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - name: Install pinned Python and dependencies
+        run: |
+          uv python install 3.10.20
+          uv venv --python 3.10.20 .venv
+          uv pip install --python "$PYTHON" -r requirements-benchmark.txt
+      - name: Verify clean checkout
+        run: bash scripts/verify_parc_release.sh
+      - name: Verify source archive without Git metadata
+        shell: bash
+        run: |
+          archive_dir="$(mktemp -d)"
+          git archive HEAD | tar -x -C "$archive_dir"
+          bash "$archive_dir/scripts/verify_parc_release.sh"
+      - name: Ensure tests did not modify release files
+        run: git diff --exit-code
+
+  cpu-model-backends:
+    runs-on: ubuntu-latest
+    env:
+      PYTHON: ${{ github.workspace }}/.venv/bin/python
+      PYTHONHASHSEED: "0"
+      HF_HUB_OFFLINE: "1"
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - name: Install full stack with CPU PyTorch
+        run: |
+          uv python install 3.10.20
+          uv venv --python 3.10.20 .venv
+          uv pip install --python "$PYTHON" torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          uv pip install --python "$PYTHON" -r requirements-full.txt
+      - name: Test real local model backends without downloads
+        run: '"$PYTHON" -m unittest discover -s tests -p test_parc_pipeline_models.py -v'
+      - name: Ensure tests did not modify release files
+        run: git diff --exit-code

@@ -1,0 +1,5 @@
+# Direct dependency pins for the PARC frozen selector.
+# This is not a complete transitive environment lock.
+numpy==2.2.6
+joblib==1.5.3
+scikit-learn==1.7.2
